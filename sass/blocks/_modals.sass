@@ -1,0 +1,564 @@
+.modals
+  position: fixed
+  width: 100%
+  height: 100%
+  max-height: 100%
+  z-index: 30
+  background-color: #1c0f02b8
+  // transition: 0.3s
+  display: flex
+  // align-items: center
+  justify-content: center
+  // &::-webkit-scrollbar, &::-webkit-scrollbar-thumb, &::scrollbar
+  //   width: 0
+  //   background: transparent 
+  //   display: none
+  // overflow-y: scroll
+.modal
+  z-index: 35
+  box-shadow: 0 24px 18px rgba(0, 0, 0, 0.21), inset 0 4px 0 #fcc873
+  border-radius: 10px
+  border: 2px solid #fcc873
+  border: 8px solid #803414
+  background-color: #bf6722
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.07) 0%, rgba(255, 255, 255, 0.07) 100%)
+  padding: 25px 20px
+  position: absolute
+  // transition: 0.3s
+  &-close 
+    position: absolute
+    right: -28px
+    top: -28px
+    width: 55px
+    height: 55px
+    background-image: url(../img/close-modal.png)
+    background-position: center center
+    background-repeat: no-repeat
+    transition: 0.3s
+    cursor: pointer
+    &:before, &:after
+      content: ""
+      display: block
+      width: 20px
+      height: 3px
+      border-radius: 5px
+      box-shadow: 0 2px 0 #48180f
+      background-color: #fcc873
+      position: absolute
+      left: 18px
+      top: 24px
+    &:before
+      transform: rotate(-45deg)
+    &:after
+      transform: rotate(45deg)
+  &-write 
+    left: calc(50% - 200px)
+    top: 10%
+    // position: fixed
+    width: 400px
+    // height: 484px
+    flex-direction: column
+    text-align: center
+  &-title 
+    text-shadow: 1px 1px 2px rgba(88, 54, 21, 0.48)
+    font-family: "Russo One"
+    font-size: 28px
+    font-weight: 400
+    display: inline-block
+    margin-bottom: 30px
+  &-desc 
+    text-shadow: 1px 1px 2px rgba(88, 54, 21, 0.3)
+    color: #ffb680
+    font-size: 14px
+    font-weight: 400
+    text-transform: none
+    margin-bottom: 25px
+  &-link 
+    color: #ffe905
+    font-family: "Fira Sans - Semi Bold"
+    font-weight: 600
+    text-transform: none
+    text-decoration: underline
+  &-form 
+    flex-direction: column
+  &-input, &-textarea
+    padding: 20px 15px
+  &-input
+    margin-bottom: 10px
+  &-textarea
+    height: 130px
+    display: block
+    margin-bottom: 30px
+  &-button 
+    padding: 15px 45px
+  &-links 
+    margin-bottom: 30px
+    margin-top: 20px
+    justify-content: space-around
+    width: 100%
+  &-forgot-btn
+    display: block
+    width: 50%
+    font-family: "Fira Sans - Semi Bold"
+    font-size: 17px
+    font-weight: 500
+    text-decoration: underline
+    text-transform: none
+    cursor: pointer
+  &-register-btn
+    display: block
+    width: 50%
+    font-family: "Fira Sans - Semi Bold"
+    font-size: 17px
+    font-weight: 500
+    text-decoration: underline
+    text-transform: none
+    cursor: pointer
+  &-deposite__img
+    width: 90px
+    height: 90px
+    position: absolute
+    left: calc(50% - 45px)
+    top: -55px
+  &-cabinet 
+    flex-direction: column
+    max-width: 787px
+    width: 98%
+    padding-left: 30px
+    padding-right: 30px
+    padding-bottom: 35px
+.cabinet
+  top: 10%
+  width: 800px
+  height: auto
+  left: calc(50% - 400px)
+  // position: fixed
+  & .modal-close
+    top: -35px 
+  &-img 
+    max-width: 430px
+    position: absolute
+    left: calc(50% - 215px)
+    top: -50px
+  &-nav 
+    margin-top: 0px
+    justify-content: space-between
+    width: 100%
+    border-bottom: 6px solid #fbc36c
+    margin-bottom: 30px
+    &__item
+      width: 32.5%
+      height: 65px
+      line-height: 65px
+      color: #fbc36c
+      text-align: center
+      font-size: 20px
+      font-weight: 700
+      background-image: url(../img/cabinet-nav-bg.png)
+      // background-size: 100% 100%
+      background-position: center center
+      background-repeat: no-repeat
+      cursor: pointer
+      margin-bottom: -1px
+      &_active
+        background-image: url(../img/cabinet-nav-active.png)
+        color: #ffffff
+  &-profile 
+    justify-content: space-between
+    padding-left: 15px
+    padding-right: 15px
+    &__item
+      flex-direction: column
+      border: 1px dashed #f09c58
+      border-radius: 10px
+      padding: 15px
+      margin-bottom: 25px
+      width: 49%
+      &s
+        width: 49%
+        flex-direction: column
+        & .cabinet-profile__item
+          width: 100%
+  &-title 
+    width: auto
+    margin-top: -25px
+    text-shadow: 1px 1px 2px rgba(88, 54, 21, 0.3)
+    font-size: 20px
+    font-weight: 700
+    padding-left: 15px
+    padding-right: 15px
+    background-color: #c27030
+    display: block
+    &-lost 
+      background-color: #bb6929
+  &-input
+    padding-left: 15px
+    padding-top: 20px
+    padding-bottom: 20px
+    &__title
+      margin-top: 20px
+      margin-bottom: 5px
+      text-transform: none
+      text-shadow: 1px 1px 2px rgba(88, 54, 21, 0.3)
+      color: #ffb680
+      font-size: 14px
+      font-weight: 500
+      display: block
+    &-lost 
+      margin-bottom: 20px
+  &-button 
+    padding-top: 16px
+    padding-bottom: 16px
+  &-select 
+    width: 100%
+    padding-right: 15px
+  &-option
+    padding-left: 15px
+    padding-top: 15px
+    padding-bottom: 15px
+    &s 
+      top: 54px
+      left: 0px
+      background-color: #914712
+      width: 100%
+  &-social
+    display: flex 
+    // margin-top: 10px
+    margin-bottom: 20px
+    &__link
+      margin-top: 5px
+      margin-right: 5px
+      // background-size: 100% 100%
+      background-position: center center
+      background-repeat: no-repeat
+      display: block
+      min-width: 55px
+      max-width: 55px
+      min-height: 55px
+      max-height: 55px
+      cursor: pointer
+      &-facebook
+        background-image: url(../img/facebook.png)
+      &-google
+        background-image: url(../img/google.png)
+      &-ok
+        background-image: url(../img/ok.png)
+      &-twitter
+        background-image: url(../img/twitter.png)
+      &-vk
+        background-image: url(../img/vk.png)
+  &-cashbox
+    flex-direction: column
+    padding-left: 25px
+    padding-right: 25px
+    &__row-1
+      display: flex
+      justify-content: space-between
+      margin-bottom: 20px
+    &__item
+      width: 49%
+      height: 80px
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      background-image: url(../img/sum-bg.png)
+      // background-size: 100% 100%
+      background-position: center center
+      background-repeat: no-repeat
+    &__title
+      color: #5c2e00
+      font-size: 14px
+      font-weight: 700
+    &__text
+      font-family: "Russo One"
+      font-size: 30px
+      font-weight: 400
+      & span
+        font-family: "Russo One"
+        font-size: 30px
+        font-weight: 400
+    &-nav
+      display: flex
+      justify-content: space-between
+      &__item
+        width: 24%
+        height: 45px
+        border-radius: 5px 5px 0 0
+        background-color: #9e5016
+        text-shadow: 1px 1px 2px rgba(88, 54, 21, 0.3)
+        color: #eea066
+        font-family: "Fira Sans"
+        font-size: 20px
+        font-weight: 700
+        line-height: 45px
+        text-align: center
+        cursor: pointer
+        &_active
+          background-color: #fecb7b
+          color: #552511
+  &-item 
+    display: flex
+    flex-direction: column
+.deposite
+  &-wrap
+    margin-left: -10px
+    margin-right: -10px
+    margin-bottom: 30px
+    border: 1px dashed #f09c58
+    border-radius: 10px
+    padding: 20px 30px
+  &-row
+    width: 100%
+    justify-content: space-between
+    &-1 
+      display: flex
+      width: 100%
+      justify-content: space-between
+  &-col 
+    width: 49%
+    & .cabinet-input
+      width: 100%
+    &-1
+      width: 100%
+      justify-content: space-between
+  &-input
+    padding-left: 15px
+    width: 100%
+  &-button
+    display: block
+    margin-top: 20px
+    margin-bottom: 20px
+    width: 240px
+    margin-left: auto
+    margin-right: auto
+  &-change 
+    display: flex
+    justify-content: space-around
+    align-items: center
+    &__item
+      display: block
+      padding-top: 20px
+      padding-bottom: 20px
+      text-align: center
+      color: #eea066
+      font-size: 17px
+      font-weight: 700
+      width: 49.5%
+      &_active
+        padding-top: 19px
+        padding-bottom: 19px
+        border-radius: 5px;
+        background-color: #fecb7b
+        color: #5a2812
+  &-title 
+    background: none
+    margin-top: 30px
+    margin-bottom: 25px
+    text-align: center
+  &-row-3
+    margin-top: 20px
+    flex-direction: column
+    border-top: 1px solid rgba(255, 255, 255, 0.32)
+  &-table 
+    flex-direction: column
+    &__row 
+      align-items: center
+      height: 50px
+      justify-content: space-around
+      background-color: #9e5016
+      &-first
+        background-color: #fecb7b
+        border-radius: 5px 5px 0 0
+        & .deposite-table__col
+          color: #5a2812
+      &:nth-child(even)
+        background-color: #914712
+    &__col
+      // height: 50px
+      font-size: 16px
+      font-weight: 500
+      color: #eea066
+      text-align: center
+      width: 25%
+      text-transform: none
+
+.history
+  &-input
+    width: 32%
+    height: 60px
+  &-button 
+    width: 35%
+    height: 60px
+.partner
+  & .cabinet-cashbox__item
+    margin-left: 2px
+    margin-right: 2px
+    background-image: url(../img/partner-nav.png)
+  &-button 
+    margin-left: auto
+    margin-right: auto
+    display: block
+    padding: 15px
+    margin-top: 30px
+    margin-bottom: 40px
+  &-title 
+    margin-bottom: 40px
+    background-color: #be6522
+
+.modal 
+  & .main-form__sum-input
+    padding-left: 0
+    color: #eea066
+  & .main-form__sum
+    margin-bottom: 20px
+  & .checkbox-text
+    text-align: left
+  & .checkbox
+    margin-bottom: 15px
+.welcome .modal-links
+  margin: 0
+
+.good, .fail
+  .modal-title
+    margin-top: 30px
+.good, .fail
+  .modal-links
+    margin: 0
+
+.rub
+  &:after
+    content: "₽"
+    font-family: "Fira Sans"
+    font-size: 32px
+    font-weight: 700
+
+
+.color-Cashback
+  color: #ffe905
+.color-Deposit
+  color: #9cf024
+.color-Withdraw
+  color: #e05e08
+
+
+@media (min-width: 1200px)
+  .modal-close:hover
+    &:after, &:before
+      background: #ffe905
+@media (max-width: 992px)
+  .modal-cabinet 
+    padding-left: 0px
+    padding-right: 0px
+    width: 100%
+    max-width: 100%
+    left: auto
+  .cabinet .modal-close 
+    right: 0
+  .cabinet-nav
+    width: auto
+    margin-left: 15px
+    margin-right: 15px
+  .cabinet-social
+    flex-wrap: wrap
+
+@media (max-width: 786px)
+  .cabinet
+    &-cashbox
+      &__row-1
+        flex-wrap: wrap 
+      &__item
+        width: 100%
+        max-width: 340px
+        margin-bottom: 10px
+        margin-left: auto
+        margin-right: auto
+  .deposite-row-1
+    flex-wrap: wrap
+  .deposite-row
+    flex-direction: column
+    justify-content: center
+  .history-input
+    height: 55px
+    margin-bottom: 10px
+    width: 98%
+    max-width: 340px
+    margin-left: auto
+    margin-right: auto
+  .history-botton
+    height: 55px
+    width: 98%
+    max-width: 340px
+    margin-left: auto
+    margin-right: auto
+  .deposite-col
+    width: 100%
+    max-width: 340px
+    margin-bottom: 10px
+    margin-left: auto
+    margin-right: auto
+  .cabinet-cashbox__row-1
+    justify-content: space-around
+  .partner .cabinet-cashbox__item
+    width: 47%
+@media (max-width: 546px)
+  .modal-cabinet 
+    box-shadow: 0 24px 18px rgba(0, 0, 0, 0.21), inset 0 4px 0 #fcc873
+    border-radius: 10px
+    border: 2px solid #fcc873
+    border: 8px solid #803414
+    background-color: #bf6722
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.07) 0%, rgba(255, 255, 255, 0.07) 100%)
+  .cabinet-profile
+    flex-direction: column
+  .cabinet-nav
+    margin-top: 0
+  .cabinet .modal-close 
+    right: 0
+    top: -50px
+  .profile-change
+    width: 100%
+  .cabinet-profile__items
+    width: 100%
+  .partner .cabinet-cashbox__item
+    width: 100%
+    max-width: 200px
+  .deposite-table
+    overflow-x: scroll
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    overflow: -moz-scrollbars-none
+    scrollbar-width: none
+    &::-webkit-scrollbar, &::-webkit-scrollbar-thumb, &::scrollbar
+      width: 0
+      background: transparent 
+  .deposite-table__row 
+    min-width: 450px
+@media (max-width: 470px)
+  .cabinet-cashbox-nav
+    flex-wrap: wrap
+    justify-content: center
+    &__item
+      width: 90%
+      max-width: 300px
+@media (max-width: 430px)
+  .modal-write
+    width: 100%
+    left: auto
+    & .modal-close 
+      right: -10px
+      top: -40px
+  .cabinet-nav
+    flex-direction: column
+    &__item
+      width: 100%
+      margin-bottom: 10px
+      background: #6e2a13
+      background-image: none
+      border-radius: 10px
+      &_active
+        background-image: none
+        background: #fbc36c
+  .deposite-button
+    width: 100%

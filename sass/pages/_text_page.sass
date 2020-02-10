@@ -1,0 +1,41 @@
+.text
+  &-block 
+    padding-left: 40px
+    padding-right: 40px
+  &-title 
+    font-size: 22px
+    font-weight: 700
+  &-list
+    list-style: none
+    padding-left: 0
+  &-item
+    line-height: 20px
+    margin: 0 0 8px 0
+    position: relative
+    &__marker
+      color: #ffffff
+      font-size: 20px
+      font-weight: 700
+      margin-right: 30px
+      display: inline-block
+    &__text
+      font-size: 14px
+      font-weight: 400
+      text-transform: none
+
+@media (max-width: 546px)
+  .faq-bg-2
+    display: none
+  .faq-bg-2box
+    background-color: #331c04
+    top: 240px
+@media (max-width: 450px)
+  .text
+    &-block 
+      padding-left: 20px
+      padding-right: 20px
+    &-item
+      &__marker
+        margin-right: 10px
+  .title-main
+    font-size: 44px

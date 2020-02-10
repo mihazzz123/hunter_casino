@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  
+  
+  <!-- Шрифты  -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700|Russo+One&display=swap" rel="stylesheet">
+
+  <!-- slick  -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  
+  <title>Hunter Casino</title>
+</head>
+<body>
+
+    <div class="modals" style="display: none"></div>
+
+    <div class="modal cabinet modal-cabinet flex"style="display: none">
+      <!-- <img src="img/cabinet.png" alt="" class="cabinet-img"> -->
+      <i class="modal-close"></i>
+      <div class="cabinet-nav tab-parent__first flex">
+        <div data-name-class=".profile" class="tab__first cabinet-nav__item cabinet-nav__item_active">Профиль </div>
+        <div data-name-class=".cashbox" class="tab__first cabinet-nav__item">касса</div>
+        <div data-name-class=".partner" class="tab__first cabinet-nav__item">партнерка</div>
+      </div>
+      <div class="tab-item__first profile cabinet-profile flex">
+        <form class="profile-change flex cabinet-profile__item">
+          <span class="cabinet-title color-text-wh">
+            Личная информация
+          </span>
+          <span class="cabinet-input__title">Ваше имя:</span>
+          <div class="cabinet-input input-main input-box">
+            <input type="text" class="input-required cabinet-input input-main" placeholder="виктор">
+            <div class="no-value"><span class="no-value__text"> Необходимо ввести данные!</span></div>
+          </div>
+          <span class="cabinet-input__title">Электронная почта:</span>
+          <div class="cabinet-input input-main input-box">
+            <input type="email" class="input-required cabinet-input input-main" placeholder="example@mail.ru">
+            <div class="no-value"><span class="no-value__text"> Необходимо ввести данные!</span></div>
+          </div>
+          <span class="cabinet-input__title">Пароль:</span>
+          <div class="cabinet-input input-main input-box">
+            <input type="password" class="input-required cabinet-input input-main" placeholder="пароль">
+            <div class="no-value"><span class="no-value__text"> Необходимо ввести данные!</span></div>
+          </div>
+          <span class="cabinet-input__title">Дата рождения:</span>
+          <div class="cabinet-input cabinet-input-lost input-main input-box">
+            <input type="date" class="input-required cabinet-input cabinet-input-lost input-main" placeholder="08.01.1988">
+            <div class="no-value"><span class="no-value__text"> Необходимо ввести данные!</span></div>
+          </div>
+          <div class="checkbox flex">
+            <div class="checkbox-item flex-center">
+              <i class="checkbox-item__click">
+              </i>
+            </div>
+            <div class="checkbox-text flec">
+              <span class="checkbox-text__read color-text-wh">Получать рассылки</span>
+            </div>
+          </div>              
+          <div class="checkbox flex">
+            <div class="checkbox-item flex-center">
+              <i class="checkbox-item__click">
+              </i>
+            </div>
+            <div class="checkbox-text flec">
+                <span class="checkbox-text__read color-text-wh">Получать бонусную информацию</span>
+            </div>
+          </div>
+          <button class="form-button button-main cabinet-button">сохранить изменения</button>
+        </form>
+        <div class="flex cabinet-profile__items">
+          <div class="profile-game flex cabinet-profile__item">
+            <span class="cabinet-title color-text-wh">
+              ответственная игра
+            </span>
+            <span class="cabinet-input__title">Выберите лимит депозита:</span>
+            <div class="input-main flex select-parent">
+              <div class="select flex cabinet-select cabinet-input">
+                <span class="cabenet-select-__text">$1000</span>
+                <i class="main-form__arrow  sidebar-language__arrow"></i>
+              </div>
+              <div class="cabinet-options options flex">
+                <div class="cabinet-option option" data-value="$2000">
+                  <span class="cabinet-option__text">$2000</span>
+                </div>
+                <div class="cabinet-option option" data-value="$3000">
+                  <span class="cabinet-option__text">$3000</span>
+                </div>
+                <div class="cabinet-option option" data-value="$4000">
+                  <span class="cabinet-option__text">$4000</span>
+                </div>
+                <div class="cabinet-option option" data-value="$5000">
+                  <span class="cabinet-option__text">$5000</span>
+                </div>
+              </div>
+            </div>
+            <span class="cabinet-input__title">Выберите срок самоисключения:</span>
+            <input type="date" class="cabinet-input input-main" placeholder="08.01.1988">
+          </div>
+          <div class="cabinet-profile__item">
+            <span class="cabinet-title cabinet-title-lost color-text-wh">
+              Привязка аккаунтов
+            </span>
+            <span class="cabinet-input__title">Привязать:</span>
+            <div class="cabinet-social">
+              <a href="#" class="cabinet-social__link cabinet-social__link-facebook"></a>
+              <a href="#" class="cabinet-social__link cabinet-social__link-google"></a>
+              <a href="#" class="cabinet-social__link cabinet-social__link-ok"></a>
+              <a href="#" class="cabinet-social__link cabinet-social__link-twitter"></a>
+              <a href="#" class="cabinet-social__link cabinet-social__link-vk"></a>
+            </div>
+            <span class="cabinet-input__title">Привязанные аккаунты:</span>
+              <div class="cabinet-social">
+                <a href="#" class="cabinet-social__link cabinet-social__link-facebook"></a>
+              </div>
+        </div>
+        </div>
+      </div>
+      <div class="tab-item__first cashbox cabinet-cashbox flex" style="display: none">
+        <div class="cabinet-cashbox__row-1">
+          <div class="cabinet-cashbox__item">
+            <span class="cabinet-cashbox__title">Доступный остаток:</span>
+            <span class="cabinet-cashbox__text color-text-fs rub">24,406.46 </span>
+          </div>
+          <div class="cabinet-cashbox__item">
+            <span class="cabinet-cashbox__title">Курс обмена:</span>
+            <span class="cabinet-cashbox__text color-text-fs"><span class="rub">1000 </span>  = 10 СР</span>
+          </div>
+        </div>
+        <div class="cabinet-cashbox-nav tab-parent">
+          <div data-name-class=".deposite" class="tab cabinet-cashbox-nav__item cabinet-cashbox-nav__item_active">депозит</div>
+          <div data-name-class=".payment" class="tab cabinet-cashbox-nav__item">выплата</div>
+          <div data-name-class=".bonuse" class="tab cabinet-cashbox-nav__item">Бонусы</div>
+          <div data-name-class=".history" class="tab cabinet-cashbox-nav__item">История</div>
+        </div>
+        <div class="tab-item deposite-wrap deposite">
+          <form action="#" method="POST" class="cabinet-item flex deposite">
+            <div class="deposite-row-1">
+            <div class="deposite-col">
+              <span class="cabinet-input__title">Выберите платежную систему:</span>
+              <div class="input-main flex select-parent">
+                  <div class="select flex cabinet-select cabinet-input">
+                    <span class="cabenet-select-__text">Master card</span>
+                    <i class="main-form__arrow  sidebar-language__arrow"></i>
+                  </div>
+                  <div class="cabinet-options options flex">
+                    <div class="cabinet-option option" data-value="Master card 1">
+                      <span class="cabinet-option__text">Master card 1</span>
+                    </div>
+                    <div class="cabinet-option option" data-value="Master card 2">
+                      <span class="cabinet-option__text">Master card 2</span>
+                    </div>
+                    <div class="cabinet-option option" data-value="Master card 3">
+                      <span class="cabinet-option__text">Master card 3</span>
+                    </div>
+                    <div class="cabinet-option option" data-value="Master card 4">
+                      <span class="cabinet-option__text">Master card 4</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="deposite-col">
+                <span class="cabinet-input__title">Введите промокод:</span>
+                <input type="text" class="cabinet-input input-main" placeholder="fg565hh">
+              </div>
+            </div>
+            <div class="deposite-row-1">
+              <div class="deposite-col">
+                <span class="cabinet-input__title">Телефон:</span>
+                <div class="cabinet-input input-main input-box">
+                  <input type="number" class="input-required cabinet-input input-main" placeholder="Телефон:">
+                  <div class="no-value"><span class="no-value__text"> Необходимо ввести данные!</span></div>
+                </div>
+              </div> 
+              <div class="deposite-col">
+                <span class="cabinet-input__title">Введите сумму для вывода:</span>
+                <div class="main-form__sum flex">
+                  <div class="input-main deposite-input input-box">
+                      <input type="number" placeholder="введите сумму" class="input-required input-main deposite-input">
+                    <div class="no-value"><span class="no-value__text"> Необходимо ввести данные!</span></div>
+                  </div>
+                  
+                  <div class="input-main main-form__currency main-form__select select-parent">
+                    
+                    <div class="main-form__currency-option main-form__option select currency-selected flex">
+                      <span data-currency="RUB" class="main-form__currency-text bold">RUB</span>
+                      <i class="main-form__arrow sidebar-language__arrow"></i>
+                    </div>
+                    
+                    <div class="main-form__options options" style="display: none">
+                        
+                        <div class="option main-form__currency-option main-form__option flex" data-value="EUR">
+                          <span class="main-form__currency-text bold">EUR</span>
+                        </div>
+                        
+                        <div class="option main-form__currency-option main-form__option flex" data-value="RUB">
+                          <span class="main-form__currency-text bold">RUB</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+          </div>
+          <button type="submit" class="form-button button-main deposite-button cabinet-button">Внести депозит</button>
+        </form>
+        </div>
+        <div class="tab-item deposite-wrap payment" style="display: none"> 
+          <form action="#" method="POST" class="cabinet-item flex deposite">
+            <div class="deposite-row-1">
+            <div class="deposite-col">
+              <span class="cabinet-input__title">Выберите платежную систему:</span>
+              <div class="input-main flex select-parent">
+                  <div class="select flex cabinet-select cabinet-input">
+                    <span class="cabenet-select-__text">Master card</span>
+                    <i class="main-form__arrow  sidebar-language__arrow"></i>
+                  </div>
+                  <div class="cabinet-options options flex">
+                    <div class="cabinet-option option" data-value="Master card 1">
+                      <span class="cabinet-option__text">Master card 1</span>
+                    </div>
+                    <div class="cabinet-option option" data-value="Master card 2">
+                      <span class="cabinet-option__text">Master card 2</span>
+                    </div>
+                    <div class="cabinet-option option" data-value="Master card 3">
+                      <span class="cabinet-option__text">Master card 3</span>
+                    </div>
+                    <div class="cabinet-option option" data-value="Master card 4">
+                      <span class="cabinet-option__text">Master card 4</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="deposite-col">
+                <span class="cabinet-input__title">Введите промокод:</span>
+                <input type="text" class="cabinet-input input-main" placeholder="fg565hh">
+              </div>
+            </div>
+            <div class="deposite-row-1">
+              <div class="deposite-col">
+                <span class="cabinet-input__title">Телефон:</span>
+                <div class="cabinet-input input-main input-box">
+                    <input type="number" class="input-required cabinet-input input-main" placeholder="Телефон:">
+                  <div class="no-value"><span class="no-value__text"> Необходимо ввести данные!</span></div>
+                </div>
+              </div> 
+              <div class="deposite-col">
+                <span class="cabinet-input__title">Введите сумму для вывода:</span>
+                <div class="main-form__sum flex">
+                <div class="input-main deposite-input input-box">
+                    <input type="number" placeholder="введите сумму" class="input-required input-main deposite-input">
+                  <div class="no-value"><span class="no-value__text"> Необходимо ввести данные!</span></div>
+                </div>
+                  
+                  
+                  <div class="input-main main-form__currency main-form__select select-parent">
+                    
+                    <div class="main-form__currency-option main-form__option select currency-selected flex">
+                      <span data-currency="RUB" class="main-form__currency-text bold">RUB</span>
+                      <i class="main-form__arrow sidebar-language__arrow"></i>
+                    </div>
+                    
+                    <div class="main-form__options options" style="display: none">
+                        
+                        <div class="option main-form__currency-option main-form__option flex" data-value="EUR">
+                          <span class="main-form__currency-text bold">EUR</span>
+                        </div>
+                        
+                        <div class="option main-form__currency-option main-form__option flex" data-value="RUB">
+                          <span class="main-form__currency-text bold">RUB</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+          </div>
+          <button type="submit" class="form-button button-main deposite-button cabinet-button">заказать выплату</button>
+        </form>
+        </div>
+        <div class="tab-item deposite-wrap bonuse" style="display: none"> 
+          <div class="cabinet-item flex deposite">
+            <form action="#">
+              <div class="deposite-row-1">
+                <div class="deposite-col">
+                  <span class="cabinet-input__title">Что вы хотите обменять:</span>
+                  <div class="input-main flex deposite-change">
+                    <span class="deposite-change__item deposite-change__item_active">Валюта</span>
+                    <span class="deposite-change__item">Очки СР</span>
+                </div>
+                
+              </div>
+              <div class="deposite-col">
+                <span class="cabinet-input__title">Введите сумму:</span>
+                <div class="cabinet-input input-main input-box">
+                    <input type="number" class="input-required cabinet-input input-main" placeholder="Укажите сумму">
+                  <div class="no-value"><span class="no-value__text"> Необходимо ввести данные!</span></div>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="form-button button-main deposite-button cabinet-button">Обменять</button>
+          </form>
+            <div class="deposite-row-3 flex">
+              <span class="cabinet-title deposite-title color-text-wh">История бонусов</span>
+              <div class="deposite-table flex">
+                <div class="deposite-table__row deposite-table__row-first flex">
+                  <div class="deposite-table__col">Date</div>
+                  <div class="deposite-table__col">Amount</div>
+                  <div class="deposite-table__col">Operation:</div>
+                  <div class="deposite-table__col">Pins left</div>
+                  <div class="deposite-table__col">Vidger</div>
+                </div>
+                <div class="deposite-table__row flex">
+                  <div class="deposite-table__col">05.05.2018</div>
+                  <div class="deposite-table__col">$ 123</div>
+                  <div class="deposite-table__col color-Cashback">Cashback</div>
+                  <div class="deposite-table__col">$ 123</div>
+                  <div class="deposite-table__col">$ 123</div>
+                </div>
+                <div class="deposite-table__row flex">
+                  <div class="deposite-table__col">13.03.2018</div>
+                  <div class="deposite-table__col">$ 78</div>
+                  <div class="deposite-table__col color-Deposit">Deposit</div>
+                  <div class="deposite-table__col">$ 78</div>
+                  <div class="deposite-table__col">$ 78</div>
+                </div>
+                <div class="deposite-table__row flex">
+                  <div class="deposite-table__col">14.05.2018</div>
+                  <div class="deposite-table__col">$ 1345</div>
+                  <div class="deposite-table__col color-Withdraw">Withdraw</div>
+                  <div class="deposite-table__col">$ 1345</div>
+                  <div class="deposite-table__col">$ 1345</div>
+                </div>
+                <div class="deposite-table__row flex">
+                  <div class="deposite-table__col">25.05.2018</div>
+                  <div class="deposite-table__col">$ 1343</div>
+                  <div class="deposite-table__col color-Deposit">Deposit</div>
+                  <div class="deposite-table__col">$ 1343</div>
+                  <div class="deposite-table__col">$ 1343</div>
+                </div>
+                <div class="deposite-table__row flex">
+                  <div class="deposite-table__col">25.06.2018</div>
+                  <div class="deposite-table__col">$ 100</div>
+                  <div class="deposite-table__col color-Deposit">Deposit</div>
+                  <div class="deposite-table__col">$ 100</div>
+                  <div class="deposite-table__col">$ 100</div>
+                </div>
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="tab-item deposite-wrap history" style="display: none"> 
+          <div class="cabinet-item flex deposite">
+              <div class="deposite-row-1">
+                <div class="deposite-col-1">
+                  <span class="cabinet-input__title">Выберите период:</span>
+                  <div class="flex  deposite-row">
+                    <input type="date" class="cabinet-input history-input input-main" placeholder="">
+                    <input type="date" class="cabinet-input history-input input-main" placeholder="">
+                    <button type="submit" class="button-main history-botton">Показать результаты</button>
+                </div>
+              </div>
+            </div>
+            <div class="deposite-row-3 flex">
+              <span class="cabinet-title deposite-title color-text-wh">История бонусов</span>
+              <div class="deposite-table flex">
+                <div class="deposite-table__row deposite-table__row-first flex">
+                  <div class="deposite-table__col">Date</div>
+                  <div class="deposite-table__col">Amount</div>
+                  <div class="deposite-table__col">Operation:</div>
+                  <div class="deposite-table__col">Pins left</div>
+                  <div class="deposite-table__col">Vidger</div>
+                </div>
+                <div class="deposite-table__row flex">
+                  <div class="deposite-table__col">05.05.2018</div>
+                  <div class="deposite-table__col">$ 123</div>
+                  <div class="deposite-table__col color-Cashback">Cashback</div>
+                  <div class="deposite-table__col">$ 123</div>
+                  <div class="deposite-table__col">$ 123</div>
+                </div>
+                <div class="deposite-table__row flex">
+                  <div class="deposite-table__col">13.03.2018</div>
+                  <div class="deposite-table__col">$ 78</div>
+                  <div class="deposite-table__col color-Deposit">Deposit</div>
+                  <div class="deposite-table__col">$ 78</div>
+                  <div class="deposite-table__col">$ 78</div>
+                </div>
+                <div class="deposite-table__row flex">
+                  <div class="deposite-table__col">14.05.2018</div>
+                  <div class="deposite-table__col">$ 1345</div>
+                  <div class="deposite-table__col color-Withdraw">Withdraw</div>
+                  <div class="deposite-table__col">$ 1345</div>
+                  <div class="deposite-table__col">$ 1345</div>
+                </div>
+                <div class="deposite-table__row flex">
+                  <div class="deposite-table__col">25.05.2018</div>
+                  <div class="deposite-table__col">$ 1343</div>
+                  <div class="deposite-table__col color-Deposit">Deposit</div>
+                  <div class="deposite-table__col">$ 1343</div>
+                  <div class="deposite-table__col">$ 1343</div>
+                </div>
+                <div class="deposite-table__row flex">
+                  <div class="deposite-table__col">25.06.2018</div>
+                  <div class="deposite-table__col">$ 100</div>
+                  <div class="deposite-table__col color-Deposit">Deposit</div>
+                  <div class="deposite-table__col">$ 100</div>
+                  <div class="deposite-table__col">$ 100</div>
+                </div>
+              </div>
+            </div>
+        </div>
+        </div>
+      </div>
+      <div class="tab-item__first partner cabinet-cashbox" style="display: none">
+          <div class="cabinet-cashbox__row-1">
+              <div class="cabinet-cashbox__item">
+                <span class="cabinet-cashbox__title">Баланс:</span>
+                <span class="cabinet-cashbox__text color-text-fs rub">1000 </span>
+              </div>
+              <div class="cabinet-cashbox__item">
+                <span class="cabinet-cashbox__title">Заработано:</span>
+                <span class="cabinet-cashbox__text color-text-fs rub">2000 </span>
+              </div>
+              <div class="cabinet-cashbox__item">
+                <span class="cabinet-cashbox__title">Привлечено:</span>
+                <span class="cabinet-cashbox__text color-text-fs">2 </span>
+              </div>
+              <div class="cabinet-cashbox__item">
+                <span class="cabinet-cashbox__title">Ставка:</span>
+                <span class="cabinet-cashbox__text color-text-fs">40% </span>
+              </div>
+            </div> 
+          <div class="cabinet-item flex">
+              <div class="deposite-row-1">
+                <button class="button-main partner-button">Показать баннеры</button>
+              </div>
+            </div>
+            <div class="deposite-row-3 deposite-wrap flex">
+              <span class="cabinet-title partner-title color-text-wh">статистика</span>
+              <div class="deposite-table flex">
+                <div class="deposite-table__row deposite-table__row-first flex">
+                  <div class="deposite-table__col">Date</div>
+                  <div class="deposite-table__col">Amount</div>
+                  <div class="deposite-table__col">Operation:</div>
+                  <div class="deposite-table__col">Pins left</div>
+                  <div class="deposite-table__col">Vidger</div>
+                </div>
+                <div class="deposite-table__row flex">
+                  <div class="deposite-table__col">05.05.2018</div>
+                  <div class="deposite-table__col">$ 123</div>
+                  <div class="deposite-table__col color-Cashback">Cashback</div>
+                  <div class="deposite-table__col">$ 123</div>
+                  <div class="deposite-table__col">$ 123</div>
+                </div>
+                <div class="deposite-table__row flex">
+                  <div class="deposite-table__col">13.03.2018</div>
+                  <div class="deposite-table__col">$ 78</div>
+                  <div class="deposite-table__col color-Deposit">Deposit</div>
+                  <div class="deposite-table__col">$ 78</div>
+                  <div class="deposite-table__col">$ 78</div>
+                </div>
+                <div class="deposite-table__row flex">
+                  <div class="deposite-table__col">14.05.2018</div>
+                  <div class="deposite-table__col">$ 1345</div>
+                  <div class="deposite-table__col color-Withdraw">Withdraw</div>
+                  <div class="deposite-table__col">$ 1345</div>
+                  <div class="deposite-table__col">$ 1345</div>
+                </div>
+                <div class="deposite-table__row flex">
+                  <div class="deposite-table__col">25.05.2018</div>
+                  <div class="deposite-table__col">$ 1343</div>
+                  <div class="deposite-table__col color-Deposit">Deposit</div>
+                  <div class="deposite-table__col">$ 1343</div>
+                  <div class="deposite-table__col">$ 1343</div>
+                </div>
+                <div class="deposite-table__row flex">
+                  <div class="deposite-table__col">25.06.2018</div>
+                  <div class="deposite-table__col">$ 100</div>
+                  <div class="deposite-table__col color-Deposit">Deposit</div>
+                  <div class="deposite-table__col">$ 100</div>
+                  <div class="deposite-table__col">$ 100</div>
+                </div>
+              </div>
+            </div>
+      </div>
+    </div>
+    
+    <div class="modal-write write modal flex" style="display: none">
+        <i class="modal-close"></i>
+        <span class="modal-title color-text-wh">Написать в казино</span>
+      <div class="modal-desc color-text-sec">
+        Перед тем, как задать нам вопрос, пожалуйста, посмотрите раздел  
+        <a href="#" class="modal-link color-text-active"> Вопросы и ответы. </a> В них отражены все наиболее часто встречающиеся вопросы.
+      </div>
+      <form action="#" method="POST" class="modal-form flex">
+          <div class="modal-input input-main bold input-box">
+              <input type="text" class="input-required modal-input input-main bold" placeholder="Электронная почта">
+            <div class="no-value"><span class="no-value__text"> Необходимо ввести данные!</span></div>
+        </div>  
+        <textarea name="" class="modal-textarea input-main bold" placeholder="Что вас интересует?"></textarea>
+        <button type="submit" class="form-button modal-button button-main">отправить</button>
+      </form>
+    </div>
+    
+    <div class="modal-write register modal flex" style="display: none">
+        <i class="modal-close"></i>
+        <form action="#" method="POST" class="modal-form flex">
+          
+          <span class="modal-title color-text-wh">Регистрация</span>
+          <div class="modal-input input-main bold input-box">
+              <input type="text" name="user-name" placeholder="логин" class="input-required modal-input input-main">
+            <div class="no-value"><span class="no-value__text"> Необходимо ввести данные!</span></div>
+          </div>  
+          <div class="modal-input input-main bold input-box">
+              <input type="email" name="user-email" placeholder="электронная почта" class="input-required modal-input input-main">
+            <div class="no-value"><span class="no-value__text"> Необходимо ввести данные!</span></div>
+          </div>  
+          <div class="modal-input input-main bold input-box">
+              <input type="password" name="user-pass" placeholder="пароль" class="input-required modal-input input-main">
+            <div class="no-value"><span class="no-value__text"> Необходимо ввести данные!</span></div>
+         </div>  
+            
+          <div class="main-form__sum flex">
+            
+            <div class="main-form__gift-select select-parent main-form__select flex input-main main-form__sum-input">
+                
+              <div class="main-form__gift-option main-form__option flex select gift-selected">
+                      <span class="main-form__gift-text">Выберите подарок</span>
+                      <i class="main-form__arrow  sidebar-language__arrow"></i>
+                    </div>
+                    <div class="main-form__options options" style="display: none">
+        
+                        <div class="option main-form__gift-option main-form__option flex" data-value="Подарок 1">
+                        <span class="main-form__gift-text">Подарок 1</span>
+                      </div>
+                      <div class="option main-form__gift-option main-form__option flex" data-value="Подарок 2">
+                        <span class="main-form__gift-text">Подарок 2</span>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  
+                  
+                  <div class="input-main main-form__currency main-form__select select-parent">
+                
+                    <div class="main-form__currency-option main-form__option select currency-selected flex">
+                      <span data-currency="RUB" class="main-form__currency-text bold">RUB</span>
+                      <i class="main-form__arrow sidebar-language__arrow"></i>
+                </div>
+                
+                <div class="main-form__options options" style="display: none">
+                    
+                  <div class="option main-form__currency-option main-form__option flex" data-value="EUR">
+                    <span class="main-form__currency-text bold">EUR</span>
+                  </div>
+                  
+                  <div class="option main-form__currency-option main-form__option flex" data-value="RUB">
+                    <span class="main-form__currency-text bold">RUB</span>
+                  </div>
+                  
+                </div>
+              </div>
+              
+            </div>
+            <div class="checkbox flex">
+              <div class="checkbox-item flex-center">
+                <i class="checkbox-item__click">
+                </i>
+              </div>
+              <div class="checkbox-text flec">
+                <span class="checkbox-text__read color-text-wh">Мне 18 лет и я принимаю</span>
+                <a href="#" class="checkbox-text__link color-text-wh">Политику Конфиденциальности</a>
+              </div>
+            </div>
+            
+            
+            
+            <button type="submit" class="form-button modal-button button-main">регистрация</button>
+          </form>
+          
+    </div>
+    
+    <div class="modal logIn modal-write flex" style="display: none">
+      <i class="modal-close"></i>
+      <form action="#" method="POST" class="modal-form flex">
+      <span class="modal-title color-text-wh">Вход в казино</span>
+      <div class="modal-input input-main bold input-box">
+          <input type="text" class="input-required modal-input input-main bold" placeholder="Логин">
+        <div class="no-value"><span class="no-value__text"> Необходимо ввести данные!</span></div>
+     </div>  
+      <div class="modal-input input-main bold input-box">
+          <input type="password" class="input-required modal-input input-main bold" placeholder="Пароль">
+        <div class="no-value"><span class="no-value__text"> Необходимо ввести данные!</span></div>
+     </div>  
+        <div class="modal-links flex">
+          <span data-modal-name=".forgote" class="open-modal modal-forgot-btn color-text-wh">Забыли пароль?</span>
+          <span data-modal-name=".register" class="open-modal modal-register-btn color-text-active">Регистрация</span>
+        </div>
+        <button type="submit" class="form-button modal-button button-main">отправить</button>
+        
+      </form>
+      
+    </div>
+    
+    <div class="modal forgote modal-write flex" style="display: none">
+      <i class="modal-close"></i>
+      <form action="#" method="POST" class="modal-form flex">
+      <span class="modal-title color-text-wh">Восстановление пароля</span>
+      <div class="modal-input input-main bold input-box">
+          <input type="email" class="input-required modal-input input-main bold" placeholder="Электронная почта">
+        <div class="no-value"><span class="no-value__text"> Необходимо ввести данные!</span></div>
+     </div>  
+      <button type="submit" class="form-button modal-button button-main">отправить</button>
+      
+    </form>
+    <div class="modal-links flex">
+        <span data-modal-name=".register" class="open-modal modal-register-btn color-text-active">Регистрация</span>
+      </div>
+      
+    </div>
+    
+    <div class="modal welcome modal-write flex" style="display: none">
+      <i class="modal-close"></i>
+      <span class="modal-title color-text-wh">Добро пожаловать!</span>
+      <span class="modal-desc color-text-sec">Перед тем, как задать нам вопрос, пожалуйста, посмотрите раздел вопросы и ответы. В них отражены все наиболее часто встречающиеся вопросы.
+        </span>
+    <div class="modal-links flex">
+        <span class="modal-close-sec modal-register-btn color-text-active">Закрыть</span>
+      </div>
+      
+    </div>
+  
+    <div class="modal good modal-write flex" style="display: none">
+      <i class="modal-close"></i>
+      <img src="img/good.png" alt="" class="modal-deposite__img">
+      <span class="modal-title color-text-wh">Депозит успешен</span>
+      <span class="modal-desc color-text-sec">Добро поджаловать! Ждем вас за нашими слотами. Желаем вам только победы и не сдаваться!
+        </span>
+    <div class="modal-links flex">
+        <span class="modal-close-sec modal-register-btn color-text-active">Закрыть</span>
+      </div>
+      
+    </div>
+  
+    <div class="modal fail modal-write flex" style="display: none">
+      <i class="modal-close"></i>
+      <img src="img/fail.png" alt="" class="modal-deposite__img">
+      <span class="modal-title color-text-wh">Депозит отменен</span>
+      <span class="modal-desc color-text-sec">По каким то причинам депозит был отменен со стороны банка эмитета. Попробуйте снова через некоторое время.</span>
+    <div class="modal-links flex">
+        <span class="modal-close-sec modal-register-btn color-text-active">Закрыть</span>
+      </div>
+      
+    </div>
+
+
+    <div class="container flex">
+      <aside class="sidebar flex desktop">
+  
+        <div class="sidebar-logo flex-center">
+          <img src="img/sidebar/logo.png" alt="" class="sidebar-logo__img">
+        </div>
+        <div class="sidebar-user flex">
+          <div data-modal-name=".cabinet" class="open-modal sidebar-user__border flex-center">
+            <a href="#" class="sidebar-user__star flex-center">1</a>
+            <a href="#" class="sidebar-user__photo flex-center">
+              <img src="img/sidebar/user.png" alt="" class="sidebar-user__photo-img">
+            </a>
+          </div>
+          <a href="#" data-modal-name=".cabinet" class="open-modal sidebar-user__name color-text text-center">***example@mail.ru</a>
+          <div data-modal-name=".cabinet" class="open-modal sidebar-user__status flex">
+            <a href="#" class="sidebar-user__level">1 уровень: </a>
+            <a href="#" class="sidebar-user__rank"> новичек</a>
+          </div>
+          <div class="sidebar-user__deposit flex">
+            <input type="number" class="sidebar-user__input text-right" placeholder="0">
+            <span class="sidebar-user__deposit-text">RUB</span>
+          </div>
+          <button type="submit" data-modal-name=".good" class="open-modal sidebar-user__button button-main">Депозит</button>
+        </div>
+        <nav class="sidebar-nav flex">
+          <a href="#" class="sidebar-nav__item sidebar-nav__item-games color-text">игры</a>
+          <a href="#" class="sidebar-nav__item sidebar-nav__item-promo color-text">промо</a>
+          <a href="#" class="sidebar-nav__item sidebar-nav__item-vip color-text">vip программа</a>
+          <a href="#" class="sidebar-nav__item sidebar-nav__item-pay color-text">платежи</a>
+          <a href="#" class="sidebar-nav__item sidebar-nav__item-tournament color-text">турниры</a>
+          <a href="#" data-modal-name=".cabinet" class="open-modal sidebar-nav__item sidebar-nav__item-personal color-text">личный кабинет</a>
+        </nav>
+        <div class="sidebar-chat flex-center text-center">
+          <span class="sidebar-chat__text"><i></i>онлайн чат</span>
+        </div>
+        <div class="sidebar-language flex">
+          <span class="sidebar-language__text color-text">выберите язык:</span>
+          <div class="sidebar-language__select select-parent flex">
+            
+            <div class="sidebar-language__option sidebar-language__option_first select sidebar-language__option-ru flex-center">
+              <i data-language="ru" class="sidebar-language__flag sidebar-language__flag-stack ru"></i>
+              <span class="sidebar-language__country">RU</span>
+              <i class="sidebar-language__arrow"></i>
+            </div>
+  
+            <div class="sidebar-language__options flex-center options" style="display: none">
+  
+              <div class=" sidebar-language__option option sidebar-language__option-ru flex-center" data-value="RU">
+                <i data-language="ru" class="sidebar-language__flag ru"></i>
+                <span class="sidebar-language__country">RU</span>
+              </div>
+              <div class=" sidebar-language__option option flex-center" data-value="ISL">
+                <i data-language="isl" class="sidebar-language__flag isl"></i>
+                <span class="sidebar-language__country">ISL</span>
+              </div>
+              <div class=" sidebar-language__option option flex-center" data-value="GER">
+                <i data-language="ger" class="sidebar-language__flag ger"></i>
+                <span class="sidebar-language__country">GER</span>
+              </div>
+              <div class=" sidebar-language__option option flex-center" data-value="UK">
+                <i data-language="uk" class="sidebar-language__flag uk"></i>
+                <span class="sidebar-language__country">UK</span>
+              </div>
+              <div class=" sidebar-language__option option flex-center" data-value="SP">
+                <i data-language="sp" class="sidebar-language__flag sp"></i>
+                <span class="sidebar-language__country">SP</span>
+              </div>
+              <div class=" sidebar-language__option option flex-center" data-value="EN">
+                <i data-language="en" class="sidebar-language__flag en"></i>
+                <span class="sidebar-language__country">EN</span>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+      </aside>
+      
+      <aside class="sidebar flex mobile">
+        
+        <div class="sidebar-gamburger">
+          <span></span>
+        </div>
+        <nav class="sidebar-nav flex">
+          <a href="#" class="sidebar-nav__item sidebar-nav__item-games color-text">игры</a>
+          <a href="#" class="sidebar-nav__item sidebar-nav__item-promo color-text">промо</a>
+          <a href="#" class="sidebar-nav__item sidebar-nav__item-vip color-text">vip программа</a>
+          <a href="#" class="sidebar-nav__item sidebar-nav__item-pay color-text">платежи</a>
+          <a href="#" class="sidebar-nav__item sidebar-nav__item-tournament color-text">турниры</a>
+          <a href="#" data-modal-name=".cabinet" class="open-modal sidebar-nav__item sidebar-nav__item-personal color-text">личный кабинет</a>
+          <div class="sidebar-chat flex-center text-center">
+            <span class="sidebar-chat__text"><i></i>онлайн чат</span>
+          </div>
+          <div class="sidebar-language flex">
+              <span class="sidebar-language__text color-text">выберите язык:</span>
+              <div class="sidebar-language__select select-parent flex">
+                
+                <div class="sidebar-language__option sidebar-language__option_first select sidebar-language__option-ru flex-center">
+              <i data-language="ru" class="sidebar-language__flag sidebar-language__flag-stack ru"></i>
+                  <span class="sidebar-language__country">RU</span>
+                  <i class="sidebar-language__arrow"></i>
+                </div>
+      
+                <div class="sidebar-language__options flex-center options" style="display: none">
+      
+                    <div class=" sidebar-language__option option sidebar-language__option-ru flex-center" data-value="RU">
+                        <i data-language="ru" class="sidebar-language__flag ru"></i>
+                        <span class="sidebar-language__country">RU</span>
+                      </div>
+                      <div class=" sidebar-language__option option flex-center" data-value="ISL">
+                        <i data-language="isl" class="sidebar-language__flag isl"></i>
+                        <span class="sidebar-language__country">ISL</span>
+                      </div>
+                      <div class=" sidebar-language__option option flex-center" data-value="GER">
+                        <i data-language="ger" class="sidebar-language__flag ger"></i>
+                        <span class="sidebar-language__country">GER</span>
+                      </div>
+                      <div class=" sidebar-language__option option flex-center" data-value="UK">
+                        <i data-language="uk" class="sidebar-language__flag uk"></i>
+                        <span class="sidebar-language__country">UK</span>
+                      </div>
+                      <div class=" sidebar-language__option option flex-center" data-value="SP">
+                        <i data-language="sp" class="sidebar-language__flag sp"></i>
+                        <span class="sidebar-language__country">SP</span>
+                      </div>
+                      <div class=" sidebar-language__option option flex-center" data-value="EN">
+                        <i data-language="en" class="sidebar-language__flag en"></i>
+                        <span class="sidebar-language__country">EN</span>
+                      </div>
+                </div>
+                
+              </div>
+          </div>
+        </nav>
+        
+        <div class="sidebar-logo flex-center">
+          <img src="img/sidebar/logo.png" alt="" class="sidebar-logo__img">
+        </div>
+        
+        <div class="sidebar-user__deposit flex">
+          <input type="number" class="sidebar-user__input text-right" placeholder="0">
+          <span class="sidebar-user__deposit-text">RUB</span>
+        </div>
+        <button type="submit" data-modal-name=".good" class="open-modal sidebar-user__button button-main">Депозит</button>
+        
+        <div class="sidebar-user flex">
+          <div data-modal-name=".cabinet" class="open-modal sidebar-user__border flex-center">
+              <a href="#" class="sidebar-user__photo flex-center">
+                <span class="sidebar-user__star flex-center">1</span>
+                <img src="img/sidebar/user.png" alt="" class="sidebar-user__photo-img">
+              </a>
+            </div>
+            <div data-modal-name=".cabinet" class="open-modal sidebar-user__status flex">
+              <a href="#" class="sidebar-user__name color-text text-center">***example@mail.ru</a>
+              <a href="#" class="sidebar-user__level">1 уровень: </a>
+              <a href="#" class="sidebar-user__rank"> новичек</a>
+            </div>
+          </div>
+          
+      </aside>
+        
+  
+    </div>
+
+
+
+  <div class="content game">
+    <div class="game-wrap flex-center">
+      <div class="game-block flex">
+        <div class="flex game-nav">
+          <div class="game-nav__item flex-center"><i class="game-nav__icon-1 game-nav__icon"></i></div>
+          <div class="game-nav__item flex-center"><i class="game-nav__icon-2 game-nav__icon"></i></div>
+          <div class="game-nav__item flex-center"><i class="game-nav__icon color-text-sec">+</i></div>
+          <div class="game-nav__item flex-center"><i class="game-nav__icon color-text-sec">-</i></div>
+        </div>
+      </div>
+    </div>
+    <div class="game-block-2 flex">
+      <div class="game-row-1 slider_2">
+        <div class="games-item flex-center">
+        <div class="games-play flex-center"><button class="button-main games-play__button">Играть</button></div>
+        <span class="games-text">Демо игра</span>
+        <img src="img/games/item-1.jpg" alt="" class="games-item__img">
+      </div>
+      <div class="games-item flex-center">
+        <div class="games-play flex-center"><button class="button-main games-play__button">Играть</button></div>
+        <span class="games-text">Демо игра</span>
+        <img src="img/games/item-2.jpg" alt="" class="games-item__img">
+      </div>
+      <div class="games-item flex-center">
+        <div class="games-play flex-center"><button class="button-main games-play__button">Играть</button></div>
+        <span class="games-text">Демо игра</span>
+        <img src="img/games/item-3.jpg" alt="" class="games-item__img">
+      </div>
+      <div class="games-item flex-center">
+        <div class="games-play flex-center"><button class="button-main games-play__button">Играть</button></div>
+        <span class="games-text">Демо игра</span>
+        <img src="img/games/item-4.jpg" alt="" class="games-item__img">
+      </div>
+      <div class="games-item flex-center">
+        <div class="games-play flex-center"><button class="button-main games-play__button">Играть</button></div>
+        <span class="games-text">Демо игра</span>
+        <img src="img/games/item-5.jpg" alt="" class="games-item__img">
+      </div>
+      <div class="games-item flex-center">
+        <div class="games-play flex-center"><button class="button-main games-play__button">Играть</button></div>
+        <span class="games-text">Демо игра</span>
+        <img src="img/games/item-6.jpg" alt="" class="games-item__img">
+      </div>
+      <div class="games-item flex-center">
+        <div class="games-play flex-center"><button class="button-main games-play__button">Играть</button></div>
+        <span class="games-text">Демо игра</span>
+        <img src="img/games/item-7.jpg" alt="" class="games-item__img">
+      </div>
+      <div class="games-item flex-center">
+        <div class="games-play flex-center"><button class="button-main games-play__button">Играть</button></div>
+        <span class="games-text">Демо игра</span>
+      <img src="img/games/item-8.jpg" alt="" class="games-item__img">
+      </div>
+      <div class="games-item flex-center">
+        <div class="games-play flex-center"><button class="button-main games-play__button">Играть</button></div>
+        <span class="games-text">Демо игра</span>
+        <img src="img/games/item-9.jpg" alt="" class="games-item__img">
+      </div>
+      <div class="games-item flex-center">
+        <div class="games-play flex-center"><button class="button-main games-play__button">Играть</button></div>
+        <span class="games-text">Демо игра</span>
+        <img src="img/games/item-10.jpg" alt="" class="games-item__img">
+      </div>
+      <div class="games-item flex-center">
+        <div class="games-play flex-center"><button class="button-main games-play__button">Играть</button></div>
+        <span class="games-text">Демо игра</span>
+        <img src="img/games/item-11.jpg" alt="" class="games-item__img">
+      </div>
+      <div class="games-item flex-center">
+        <div class="games-play flex-center"><button class="button-main games-play__button">Играть</button></div>
+        <span class="games-text">Демо игра</span>
+        <img src="img/games/item-12.jpg" alt="" class="games-item__img">
+      </div>
+      <div class="games-item flex-center">
+        <div class="games-play flex-center"><button class="button-main games-play__button">Играть</button></div>
+        <span class="games-text">Демо игра</span>
+        <img src="img/games/item-13.jpg" alt="" class="games-item__img">
+      </div>
+      <div class="games-item flex-center">
+        <div class="games-play flex-center"><button class="button-main games-play__button">Играть</button></div>
+        <span class="games-text">Демо игра</span>
+        <img src="img/games/item-14.jpg" alt="" class="games-item__img">
+      </div>
+      </div>
+      <div class="game-row-2 flex">
+        <a href="#" class="game-button flex-center color-text-sec">последняя игра</a>
+        <a href="" class="game-button flex-center color-text-sec"> топ игры</a>
+        <form action="#" method="POST" class="games-search flex games-input mobile-992">
+            <input type="text" class="games-search__input bold" placeholder="ПОИСК ПО ИГРЕ...">
+            <button class="games-search__btn"></button>
+          </form>
+        <div class="game-records  slider_3">
+          <div class="game-record flex">
+            <div class="game-record__img game-record__img-1"></div>
+            <div class="game-record__text">
+              <span class="game-record__title color-text-sec">Masic</span>
+              <span class="game-record__sum color-text-wh">$ 278,506.08</span>
+            </div>
+          </div>
+          <div class="game-record flex">
+            <div class="game-record__img game-record__img-2"></div>
+            <div class="game-record__text">
+              <span class="game-record__title color-text-sec">Masic</span>
+              <span class="game-record__sum color-text-wh">$ 48,506.45</span>
+            </div>
+          </div>
+          <div class="game-record flex">
+            <div class="game-record__img game-record__img-3"></div>
+            <div class="game-record__text">
+              <span class="game-record__title color-text-sec">Masic</span>
+              <span class="game-record__sum color-text-wh">$ 548,506.08</span>
+            </div>
+          </div>
+          <div class="game-record flex">
+            <div class="game-record__img game-record__img-4"></div>
+            <div class="game-record__text">
+              <span class="game-record__title color-text-sec">Masic</span>
+              <span class="game-record__sum color-text-wh">$ 28,506.08</span>
+            </div>
+          </div>
+          <div class="game-record flex">
+            <div class="game-record__img game-record__img-5"></div>
+            <div class="game-record__text">
+              <span class="game-record__title color-text-sec">Masic</span>
+              <span class="game-record__sum color-text-wh">$ 428,506.08</span>
+            </div>
+          </div>
+          <div class="game-record flex">
+            <div class="game-record__img game-record__img-1"></div>
+            <div class="game-record__text">
+              <span class="game-record__title color-text-sec">Masic</span>
+              <span class="game-record__sum color-text-wh">$ 278,506.08</span>
+            </div>
+          </div>
+          <div class="game-record flex">
+            <div class="game-record__img game-record__img-2"></div>
+            <div class="game-record__text">
+              <span class="game-record__title color-text-sec">Masic</span>
+              <span class="game-record__sum color-text-wh">$ 48,506.45</span>
+            </div>
+          </div>
+          <div class="game-record flex">
+            <div class="game-record__img game-record__img-3"></div>
+            <div class="game-record__text">
+              <span class="game-record__title color-text-sec">Masic</span>
+              <span class="game-record__sum color-text-wh">$ 548,506.08</span>
+            </div>
+          </div>
+          <div class="game-record flex">
+            <div class="game-record__img game-record__img-4"></div>
+            <div class="game-record__text">
+              <span class="game-record__title color-text-sec">Masic</span>
+              <span class="game-record__sum color-text-wh">$ 28,506.08</span>
+            </div>
+          </div>
+          <div class="game-record flex">
+            <div class="game-record__img game-record__img-5"></div>
+            <div class="game-record__text">
+              <span class="game-record__title color-text-sec">Masic</span>
+              <span class="game-record__sum color-text-wh">$ 428,506.08</span>
+            </div>
+          </div>
+        </div>
+        <form action="#" method="POST" class="games-search flex games-input desktop-992">
+          <input type="text" class="games-search__input bold" placeholder="ПОИСК ПО ИГРЕ...">
+          <button class="games-search__btn"></button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+  
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

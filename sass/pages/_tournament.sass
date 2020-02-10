@@ -1,0 +1,236 @@
+.tournament
+  &-row-1 
+    width: 100%
+    justify-content: center
+    align-items: center
+    margin-bottom: 30px
+  &-item 
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    background-repeat: no-repeat
+    background-size: auto
+    width: 247px
+    height: 77px
+    // box-shadow: 0 6px 0 rgba(50, 26, 6, 0.21)
+    &-1
+      background-image: url(../img/tournament/img-1.png)
+      background-position: left center
+    &-3
+      background-image: url(../img/tournament/img-2.png)
+      background-position: right center
+    &__big
+      // background-size: 100% 100%
+      position: relative
+      background-image: url(../img/tournament/img-3.png)
+      background-position: center center
+      min-width: 442px
+      height: 159px
+      // box-shadow: 0 10px 0 rgba(50, 26, 6, 0.21)
+      & .tournament
+        &-title 
+          text-shadow: 1px 1px 1px rgba(255, 242, 229, 0.13)
+          font-size: 20px
+        &-text 
+          color: #ffffff
+          font-family: "Russo One"
+          font-size: 55px
+          font-weight: 400
+          &:after
+            content: "₽"
+            color: #5c2e00
+            font-family: "Fira Sans"
+            font-size: 56px
+            font-weight: 700
+    &__img  
+      position: absolute
+      top: -40px
+      z-index: -1
+  &-title 
+    color: #5c2e00
+    font-size: 17px
+    font-weight: 700
+  &-text 
+    color: #e05f09
+    font-family: "Russo One"
+    font-size: 24px
+    font-weight: 400
+  &-row-2 
+    justify-content: space-around
+    margin-bottom: 50px
+  &-table 
+    width: 25%
+    flex-direction: column
+    &__first
+      width: 100%
+      background-color: #331c04
+      justify-content: space-around
+      & .tournament-table__col
+        justify-content: center
+        width: 50%
+        color: #ffffff
+        font-size: 16px
+        font-weight: 700
+        padding-top: 15px
+        padding-bottom: 15px
+    &__second
+      width: 100%
+      justify-content: space-around
+      &:nth-child(even)
+        background-color: #472708
+      & .tournament-table__col
+        justify-content: center
+        width: 50%
+        border-bottom: 1px solid #8b4f32
+        border-right: 1px solid #8b4f32
+        color: #9d6b3e
+        font-size: 14px
+        font-weight: 700
+        padding-top: 12px
+        padding-bottom: 12px
+        &:first-child
+          border-left: 1px solid #8b4f32
+  &-desc 
+    width: 50%
+    flex-direction: column
+    align-items: center
+    padding-left: 15px
+    padding-right: 15px
+    &__title
+      display: inline-block
+      width: 100%
+      color: #ffffff
+      font-size: 20px
+      font-weight: 700
+      margin-top: 50px
+      margin-bottom: 30px
+      text-align: left
+    &__text
+      color: #9d6b3e
+      font-size: 14px
+      font-weight: 400
+      text-transform: none
+  &-place 
+    align-items: center
+    flex-direction: column
+    width: 30%
+    &s 
+      width: 100%
+      // justify-content: flex-end
+      align-items: flex-end
+    &__prise
+      width: 100%
+      text-align: center
+      line-height: 60px
+      height: 60px
+      color: #ffffff
+      font-family: "Russo One"
+      font-size: 24px
+      font-weight: 400
+      background-color: #472708
+      white-space: nowrap
+      &:after
+        content: "₽"
+        color: #a27242
+        font-family: "Fira Sans"
+        font-weight: 700
+        padding-left: 5px
+    &__first
+      width: 39%
+      & .tournament-place__prise
+        height: 85px
+        line-height: 85px
+        font-size: 36px
+        background-color: #724717
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.21) 0%, rgba(255, 255, 255, 0.21) 100%)
+  &-rules 
+    border-left: 1px solid rgba(255, 255, 255, 0.17)
+    padding-left: 15px
+    width: 25%
+    &__title 
+      margin-top: 0
+    & ul 
+      padding: 0
+    &__list
+      color: #9d6b3e
+      font-family: "Fira Sans"
+      font-size: 16px
+      list-style: none
+      display: flex
+      margin-bottom: 25px
+      & span 
+        text-transform: none
+    &__marker
+      margin-right: 20px
+      display: block
+      min-width: 30px
+      max-width: 30px
+      min-height: 30px
+      max-height: 30px
+      background-repeat: no-repeat
+      background-size: 100% 100%
+  &-games
+    color: #ffffff
+    font-family: "Russo One"
+    font-size: 36px
+    font-weight: 400
+    display: inline-block
+    width: 100%
+    margin-bottom: 25px
+    margin-top: 50px
+    text-align: center
+.marker-1
+  background-image: url(../img/tournament/marker-1.png)
+.marker-2
+  background-image: url(../img/tournament/marker-2.png)
+.marker-3
+  background-image: url(../img/tournament/marker-3.png)
+
+@media (max-width: 1400px)
+  .tournament
+    &-row-2 
+      flex-wrap: wrap
+    &-table 
+      width: 40%
+    &-rules 
+      width: 100%
+    &-desc 
+      width: 60%
+      margin-bottom: 50px
+@media (max-width: 992px)
+  .tournament
+    &-table 
+      width: 100%
+      max-width: 340px
+      margin-bottom: 50px
+    &-rules 
+      width: 100%
+      margin-bottom: 50px
+    &-desc 
+      width: 100%
+@media (max-width: 786px)
+  .tournament
+    &-row-1 
+      flex-direction: column
+    &-item__img
+      display: none
+@media (max-width: 546px)
+  .tournament
+    &-place
+      width: 90%
+      margin-bottom: 40px
+      &s
+        align-items: center
+        justify-content: center
+        flex-wrap: wrap
+    &-games
+      font-size: 28px
+  .bonus .games__title
+    padding-left: 15px
+@media (max-width: 450px)
+  .tournament
+    &-item__big
+      min-width: 98%
+      background-size: 100% 100%
+  .bonus .games-row-2
+    margin-bottom: 20px

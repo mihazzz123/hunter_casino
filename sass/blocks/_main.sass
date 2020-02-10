@@ -1,0 +1,407 @@
+.main
+  background-repeat: no-repeat
+  // background-size: cover
+  height: 700px
+  position: relative
+  overflow: hidden
+  &-block
+    position: relative
+    // width: 70%
+    width: 100%
+    align-items: center
+    justify-content: space-between
+    z-index: 10
+  &-form
+    padding: 40px 40px 60px 60px
+    margin-top: 30px
+    width: 440px
+    height: 510px
+    background-image: url(../img/main/form-bg.svg)
+    background-repeat: no-repeat
+    background-position: center center
+    // background-size: 100% 100%
+    flex-direction: column
+    // justify-content: space-between
+    align-items: center
+    z-index: 5
+    &__box
+      width: 100%
+      align-items: center
+      flex-direction: column
+    &__title
+      display: block
+      font-weight: 400  
+      color: #ffffff
+      text-shadow: 1px 1px 2px rgba(88, 54, 21, 0.48)
+      font-size: 30px
+      margin-bottom: 20px
+      font-family: "Russo One"
+    &__select
+      width: 100%
+      height: 55px
+      align-items: flex-start
+      flex-direction: column
+      // overflow: hidden
+    & .input-main
+        margin-bottom: 10px
+    &__option
+      height: 55px
+      width: 100%
+      align-items: center
+      padding: 15px 20px 15px 20px
+      flex-wrap: nowrap
+      &s 
+        width: 100%
+        top: 50px
+        background-color: #914712
+      &-text 
+        display: block
+    &__arrow
+      display: block
+      width: 10px
+      height: 7px
+      margin-left: auto
+      background-image: url(../img/sidebar/arrow.png)
+      background-repeat: no-repeat
+      transition: 0.3s
+      &_active
+        transform: rotate(180deg)
+    &__input
+      padding-left: 20px
+    &__sum 
+      width: 100%
+      justify-content: space-between
+      &-input
+        padding-left: 20px
+        width: calc(100% - 90px)
+    &__currency
+      margin-left: 10px
+      max-width: 90px
+      &-option 
+        padding-left: 20px
+    &__gift
+      width: 100%
+    &__button
+      width: 230px
+      margin-top: 15px
+      padding-top: 15px
+      padding-bottom: 15px
+  &-welcome
+    position: absolute
+    width: 590px
+    height: 300px
+    top: calc(50% - 150px)
+    // left: 500px
+    left: calc(50% - 255px)
+    flex-direction: column
+    // align-items: center
+    &__title
+      color: #fffefe
+      font-family: "Russo One"
+      font-size: 36px
+      font-weight: 400
+      // margin-left: 10px
+    &__procent
+      display: block
+      background-repeat: no-repeat
+      width: 100%
+      height: 140px
+      margin-top: 20px
+      margin-bottom: 20px
+      // color: #88ed1f
+      // background-image: linear-gradient(to top, rgba(0, 0, 0, 0.37) 0%, rgba(255, 255, 255, 0.37) 100%)
+      // -webkit-background-clip: text 
+      // background-clip: text
+      // font-size: 194px
+      // font-family: "Russo One"
+      & span 
+        font-size: 70px
+        font-weight: 400
+      &-1
+        background-image: url(../img/main/100.svg)
+      &-2
+        background-image: url(../img/main/100fs.png)
+      &-3
+        background-image: url(../img/main/50.svg)
+    &__button
+      // margin-left: 10px
+      padding: 10px
+      // max-width: 450px
+
+      box-shadow: 8px 10px 0 rgba(0, 0, 0, 0.14), inset 0 2px 0 rgba(252, 200, 115, 0.39)
+      background-color: #bb6220
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%)
+      color: #5c2e0c
+      font-family: "Russo One"
+      font-size: 40px
+      transition: 0.3s
+      cursor: pointer
+    &__text
+      &-second
+        margin-left: 5px
+        margin-right: 5px
+        color: #fefefe
+        font-family: "Russo One"
+        // font-size: 36px
+        // font-weight: 400
+      &-first 
+        font-family: "Russo One"
+  &-man 
+    position: absolute
+    right: 0px
+    bottom: 10px
+    z-index: 3
+    top: 100px
+    width: 420px
+    height: 680px
+
+  &-money
+    position: absolute
+    -webkit-user-select: none
+    -moz-user-select: none
+  &-img-1 
+    top: 0
+    left: 0
+    min-width: 100%
+    z-index: 2
+  &-img-2 
+    bottom: 0
+    left: 0
+    min-width: 100%
+    z-index: 2
+  &-money-1
+    top: 8%
+    left: 0px
+    z-index: 1
+  &-money-2 
+    left: 15%
+    top: 0
+    z-index: 1
+  &-money-3 
+    right: 49%
+    top: 10%
+    z-index: 1
+  &-money-4  
+    right: 24%
+    top: 0
+    z-index: 1
+  &-money-5  
+    left: 22%
+    bottom: 15%
+    z-index: 1
+  &-money-6  
+    right: 0
+    bottom: 15%
+    z-index: 1
+  &-money-7  
+    right: 19%
+    bottom: 6%
+    z-index: 4
+  &-money-8  
+    right: 35%
+    bottom: 11%
+    z-index: 1
+
+.slide-1
+  // display: none
+  background-image: url(../img/main/first-bg.jpg)
+.slide-2
+  background-image: url(../img/main/first-bg.jpg)
+  .main
+    &-form__sum-input 
+      padding-left: 0
+.welcome-wrap__mobile
+  width: 100%
+.welcome-slide__mobile
+  display: flex !important
+  width: 100%
+
+
+@media (min-width: 1024px)
+  .main
+    &-welcome
+      &__button:hover
+        background: #f18b01
+
+@media (max-width: 1800px)
+  .main-block
+    // width: 80%
+  .main-img-1
+    display: none
+  .slide-3
+    .main-man
+      right: 0px
+  .main-man
+    right: -50px
+  .main-welcome
+    left: calc(60% - 255px)
+@media (max-width: 1600px)
+  .main-block
+    // width: 90%
+  .main-welcome
+    left: auto
+    right: 0
+  .main-man
+    display: none
+  .slide-3
+    .main-money-9
+      bottom: 0
+    .main-money-7
+      display: none 
+@media (max-width: 1470px)
+  .main-block
+    width: 100%
+    justify-content: space-between
+  .main-welcome
+    width: 50%
+    margin-left: auto
+    // align-items: flex-end
+    height: auto
+    // width: auto
+    position: static
+    &__title
+      display: block
+      margin-left: auto
+    &__procent
+      background-size: 100% 100%
+  .main-welcome__button 
+    font-size: 28px
+@media (max-width: 1200px)
+  .main 
+    width: 100%
+    margin-top: 90px
+    margin-left: 0
+    &-money-7 
+      display: none
+@media (max-width: 992px)
+  .slide-2 .main-welcome
+    width: 100%
+    max-width: 100%
+  .main
+    & .input-box .input-main
+      width: 100%
+    &-block 
+      flex-direction: column-reverse
+    &-form 
+      width: 90%
+      height: auto
+      margin-bottom: 50px
+      margin-top: 0
+      padding-left: 60px
+      padding-right: 60px
+      box-shadow: 0 24px 18px rgba(0, 0, 0, 0.21), inset 0 4px 0 #fcc873
+      border-radius: 10px
+      border: 8px solid #803414
+      background-color: #bf6722
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.07) 0%, rgba(255, 255, 255, 0.07) 100%)
+      padding: 25px 20px
+      &__box
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: space-between
+        & .input-main
+          width: 49%
+          font-size: 14px
+          &::placeholder
+            font-size: 14px
+      &__option
+        padding-top: 19px
+      &__sum
+        width: 49%
+        &-input
+          width: calc(99% - 90px) !important
+      &__button
+        margin-left: auto
+    &-welcome
+      width: 100%
+      flex-direction: row
+      justify-content: space-between
+      background: rgba(0, 0, 0, 0.2)
+      padding: 0px 10px
+      margin-bottom: 20px
+      &__procent
+        background-size: contain  
+      &__box
+        flex-direction: column
+        justify-content: space-between
+        margin-bottom: 20px
+        margin-top: 20px
+        width: 45%
+      &__title
+        font-size: 28px
+      &__button
+        height: 60px
+        margin-left: 0
+        font-size: 32px
+        font-weight: 700
+@media (max-width: 768px)
+  .main
+    height: 950px
+    &-form
+      padding-bottom: 60px
+      &__box
+        flex-direction: column
+        width: 100%
+        & .input-main
+          width: 100%
+      &__sum
+        width: 100%
+      &__button
+        margin-top: 10px
+    &-img-2 
+      bottom: 22px
+    &-welcome
+      flex-direction: column
+      align-items: center
+      &__box
+        width: 100%
+        align-items: center
+      &__title
+        margin-left: 0
+        margin-bottom: 10px
+        text-align: center
+      &__procent
+        width: 90%
+        min-width: 300px
+        height: 120px
+        margin-bottom: 0
+        background-position: center center
+  .slide-3
+    .main-welcome__procent
+      max-width: 300px
+      min-width: 200px
+  .welcome-slide__mobile
+    flex-direction: column
+    align-items: center
+@media (max-width: 546px)
+  .main
+    padding-left: 0
+    padding-right: 0
+    height: 950px
+    &-img-2 
+      bottom: -60px
+    &-form
+      width: 100%
+      padding-left: 35px
+      padding-right: 35px
+      &__title
+        text-align: center
+        margin-bottom: 10px
+        font-size: 28px
+      &__button
+        margin-left: auto
+        margin-right: auto
+      &__sum
+        flex-direction: column
+        &-input
+          height: 55px
+          width: 100% !important
+      &__currency
+        max-width: 100%
+        width: 100%
+        margin-left: 0
+@media (max-width: 450px)
+  .main
+    height: 980px
+    &-img-2 
+      bottom: -40px

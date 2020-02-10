@@ -1,0 +1,182 @@
+.level 
+  &s 
+    flex-direction: column
+    width: 100%
+    align-items: center
+    margin-top: 100px
+  &-item 
+    background-image: url(../img/levels/level-bg.png)
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: 100% 100%
+    flex-direction: column
+    position: relative
+    max-width: 1029px
+    width: 98%
+    margin-left: auto
+    margin-right: auto
+    padding: 50px 30px
+    margin-bottom: 100px
+  &-image 
+    position: absolute
+    width: 160px
+    height: 160px
+    border: 1px dashed #a86d31
+    border-radius: 100%
+    left: calc(50% - 80px)
+    top: calc(-50% + 80px)
+    padding: 5px
+    &-bg 
+      border-radius: 100%
+      width: 100%
+      height: 100%
+      background-color: #6c370d
+      background-image: linear-gradient(to top, #ab5a14 0%, #6d380d 100%)
+      position: relative
+      & .star
+        top: auto
+        width: 50px
+        height: 50px
+        line-height: 50px
+        font-size: 19px
+        bottom: -25px
+        left: calc(50% - 20px)
+    &__img
+      min-height: 100%
+      max-width: 100%
+  &-row-1
+    padding-bottom: 30px
+    justify-content: space-around
+    border-bottom: 1px solid rgba(255, 255, 255, 0.17)
+  &-title 
+    flex-direction: column
+    text-align: right
+    &__level
+      margin-bottom: 8px
+      font-size: 17px
+      font-weight: 700
+    &__title
+      font-size: 30px
+      font-weight: 400
+      font-family: "Russo One"
+      & span 
+        font-size: 30px
+        font-weight: 400
+        font-family: "Russo One"
+  &-status 
+    text-align: left
+  &-row-2 
+    justify-content: space-around
+    margin-top: 30px
+  &-info 
+    flex-direction: column
+    text-align: center
+    width: 33.33%
+    &:nth-child(2n)
+      border-left: 1px solid rgba(255, 255, 255, 0.17)
+      border-right: 1px solid rgba(255, 255, 255, 0.17)
+    &__desc
+      color: #eea066
+      font-size: 14px
+      font-weight: 400
+      text-transform: none
+      margin-bottom: 8px
+
+
+.level-img
+  &-1
+    right: -70px
+    bottom: 37%
+  &-2
+    top: -50px
+    right: 70px
+    z-index: -1
+  &-3
+    top: -30px
+    left: -20px
+  &-4
+    right: -100px
+    top: 40px
+  &-5
+    right: 5%
+    top: 6%
+  &-6
+    top: 36%
+    left: -70px
+
+.status-bg-sec-levels
+  bottom: 50%
+  opacity: 0.5
+
+
+@media (max-width: 992px)
+  .level
+    &-row-1
+      // flex-direction: column
+      // flex-wrap: wrap
+      align-items: center
+    &-row-2
+      flex-wrap: wrap
+      // flex-direction: column
+      justify-content: center 
+      align-items: center
+    &-title
+      &__level
+        font-size: 16px
+      &__title
+        font-size: 20px
+        & span 
+          font-size: 20px
+@media (max-width: 786px)
+  .level
+    &-row-1
+      justify-content: space-between 
+    &-info
+      width: auto 
+      margin-bottom: 20px
+      &:nth-child(2n)
+        padding-left: 30px
+        padding-right: 30px
+        border: none
+        // padding: 0
+@media (max-width: 546px)
+  .level
+    &-row-1
+      flex-wrap: wrap
+    &-image 
+      left: auto
+      right: 0
+      top: -10px
+      width: 130px
+      height: 130px
+    &-title 
+      width: 100%
+      margin-bottom: 10px
+      text-align: left !important
+  .level-img
+    &-1
+      display: none
+    &-2
+      display: none
+    &-3
+      display: none
+    &-4
+      display: none
+    &-5
+      display: none
+    &-6
+      display: none
+@media (max-width: 380px)
+  .level
+    &-item 
+      width: 100%
+      padding-left: 10px
+      padding-right: 10px
+    &-title
+      &__level
+        font-size: 14px
+      &__title
+        font-size: 16px
+        & span 
+          font-size: 16px
+

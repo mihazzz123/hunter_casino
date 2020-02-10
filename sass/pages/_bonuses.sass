@@ -1,0 +1,172 @@
+.bonus
+  & .status-bg-sec
+    opacity: 1
+  &es 
+    flex-wrap: wrap
+    justify-content: space-around
+  &-item 
+    width: 442px
+    min-height: 550px
+    // height: 542px
+    flex-direction: column
+    align-items: center
+    // justify-content: space-between
+    // width: 30%
+    position: relative
+    text-align: center
+    background-repeat: no-repeat
+    background-position: center center
+    // background-size: 100% 100%
+    padding: 40px
+    margin-bottom: 50px
+    &-1
+      background-image: url(../img/bonuses/item-1.png)
+    &-2
+      background-image: url(../img/bonuses/item-2.png)
+    &-3
+      background-image: url(../img/bonuses/item-3.png)
+    &-4
+      background-image: url(../img/bonuses/item-4.png)
+    &-5
+      background-image: url(../img/bonuses/item-5.png)
+    &-6
+      background-image: url(../img/bonuses/item-6.png)
+    &__img
+      z-index: -1
+      position: absolute
+      top: -30px
+    &__title
+      font-size: 22px
+      font-weight: 700
+      margin-top: 130px
+      margin-bottom: 60px
+    &__desc
+      color: #ffb074
+      font-size: 15px
+      font-weight: 400
+      text-transform: none
+      margin-bottom: 30px
+    &__button
+      font-size: 18px
+      font-weight: 700
+      text-transform: uppercase
+      margin-bottom: 25px
+      padding: 15px 50px
+    &__link
+      text-transform: none
+      font-size: 14px
+      font-weight: 400
+      text-decoration: underline
+      margin-bottom: 25px
+    &-sec 
+      position: absolute
+      padding: 70px 22px 70px 70px
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      background-repeat: no-repeat
+      background-position: center center
+      background-size: 100% 100%
+      background-image: url(../img/bonuses/bonus-item-sec.png)
+      text-align: left
+    &__close
+      position: absolute
+      right: -20px
+      top: -20px
+      width: 55px
+      height: 55px
+      background-image: url(../img/close-modal.png)
+      background-position: center center
+      background-repeat: no-repeat
+      box-sizing: 100% 100%
+      cursor: pointer
+      &:before, &:after
+        content: ""
+        display: block
+        width: 20px
+        height: 3px
+        border-radius: 5px
+        box-shadow: 0 2px 0 #48180f
+        background-color: #fcc873
+        position: absolute
+        left: 18px
+        top: 24px
+      &:before
+        transform: rotate(-45deg)
+      &:after
+        transform: rotate(45deg)
+    &__text
+      height: 100%
+      text-transform: none
+      color: #ffb074
+      font-size: 15px
+      font-weight: 400
+      text-align: left
+      display: block
+      overflow-y: scroll
+      &::-webkit-scrollbar-track
+        background-color: transparent
+        // background-color: #351008
+      &::-webkit-scrollbar 
+        margin-left: 20px
+        width: 25px
+        background-color: transparent
+        // background-color: #351008
+      &::-webkit-scrollbar-thumb
+        display: block !important
+        background-image: url(../img/bonuses/scroll.png)
+        background-position: center center
+        background-repeat: no-repeat
+        // background-size: 100% 100%
+
+
+@media (max-width: 997px)
+  .faq-bg-2
+    display: none
+  .faq-bg-2box
+    top: 250px
+    background-image: linear-gradient(to top, #6e380e 0%, #301a02 100%)
+@media (max-width: 786px)
+  .bonus
+    &-item 
+      background-size: contain
+      background-position: center top
+      box-shadow: 0 24px 18px rgba(0, 0, 0, 0.21), inset 0 4px 0 #fcc873
+      border-radius: 10px
+      border: 8px solid #803414
+      background-color: #bf6722
+      &-sec 
+        padding: 30px 20px 30px 30px
+        border-radius: 10px
+        border: 8px solid #a45613
+        background-color: #884710
+        background-image: none 
+      &__text
+        &::-webkit-scrollbar-thumb
+          background-image: none
+      &__title
+        margin-top: 170px
+      &__img
+        display: none
+      &-1
+        background-image: url(../img/bonuses/img-mobile-1.png)
+      &-2
+        background-image: url(../img/bonuses/img-mobile-2.png)
+      &-3
+        background-image: url(../img/bonuses/img-mobile-3.png)
+      &-4
+        background-image: url(../img/bonuses/img-mobile-4.png)
+      &-5
+        background-image: url(../img/bonuses/img-mobile-5.png)
+      &-6
+        background-image: url(../img/bonuses/img-mobile-6.png)
+@media (max-width: 450px)
+  .bonus
+    padding-left: 0
+    padding-right: 0
+    &-item
+      width: 100%
+      padding-left: 15px
+      padding-right: 15px
+

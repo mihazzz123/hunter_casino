@@ -1,0 +1,218 @@
+.footer
+  position: relative
+  padding-top: 70px
+  padding-bottom: 30px
+  flex-direction: column
+  &-row-1
+    z-index: 12
+    justify-content: space-between
+    margin-bottom: 35px
+  &-row-2 
+    min-height: 75px
+    width: 100%
+    justify-content: space-between
+    flex-wrap: wrap
+    border-top: 1px solid rgba(225, 225, 225, 0.07)
+    padding-top: 15px
+    padding-bottom: 20px
+    margin-left: -15px
+    margin-right: -15px
+  &-box 
+    width: 30%
+    &-1, &-2
+      padding-right: 40px
+      border-right: 1px solid rgba(225, 225, 225, 0.07)
+    &-2, &-3
+      padding-left: 40px
+    &-2
+      width: 40%
+    &-3
+      flex-direction: column
+  &-desc 
+    // opacity: 0.39
+    font-size: 12px
+    font-weight: 400
+    &__text
+      text-transform: none
+  &-social
+    margin-top: 20px 
+    &__link
+      width: 35px
+      height: 35px
+      // border: 2px solid #5f3e1f
+      border-radius: 100%
+      margin-right: 10px
+      transition: 0.3s
+      background-repeat: no-repeat
+      background-size: 750%
+      background-image: url(../img/social-sprite.png)
+  &-nav
+    flex-wrap: wrap
+    &__item 
+      width: 50%
+      font-size: 13px
+      text-transform: none
+      transition: 0.3s
+      font-weight: 400
+  &-links 
+    justify-content: space-between
+    margin-bottom: 35px
+  &-link
+    display: block
+    width: 37px
+    height: 37px
+    background-repeat: no-repeat
+    background-size: 1000%
+    background-image: url(../img/footer-sprite-1.png)
+    &-1
+      background-position: 0px 0px
+    &-2
+      background-position: -67px 0px
+    &-3
+      background-position: -135px 0px
+    &-4
+      background-position: -203px 0px
+    &-5
+      background-position: -270px 0px
+    &-6
+      background-position: -337px 0px
+  &-copyright 
+    opacity: 0.39
+    font-size: 12px
+    font-weight: 400
+
+
+.facebook
+  background-position: 0px 0px
+.google
+  background-position: -45px 0px
+.ok
+  background-position: -90px 0px
+.twitter
+  background-position: -136px 0px
+.vk
+  background-position: -182px 0px
+.mail
+  background-position: -227px 0px
+
+.footer
+  &-img 
+    background-repeat: no-repeat
+    background-size: 2100%
+    background-image: url(../img/footer/sprite.png)
+    width: 70px
+    height: 50px
+    margin-left: 15px
+    margin-right: 15px
+    &-1 
+      background-position: 2px 2px
+    &-2 
+      background-position: -125px 2px
+    &-3 
+      background-position: -253px 2px
+    &-4
+      background-position: -380px 2px
+    &-5
+      background-position: -507px 2px
+    &-6
+      background-position: -637px 2px
+    &-7
+      background-position: -764px 2px
+    &-8
+      background-position: -890px 2px
+    &-9
+      background-position: -1019px 2px
+    &-10
+      background-position: -1146px 2px
+    &-11
+      background-position: -1275px 2px
+    &-12
+      background-position: -1403px 2px
+    &-13
+      background-position: 2px -83px
+    &-14
+      background-position: -123px -83px
+    &-15
+      background-position: -248px -83px
+    &-16
+      background-position: -370px -83px
+    &-17
+      background-position: -509px -83px
+    &-18
+      background-position: -637px -83px
+    &-19
+      background-position: -764px -83px
+    &-20
+      background-position: -891px -83px
+    &-21
+      background-position: -1023px -83px
+    &-22
+      background-position: -1146px -83px
+    &-23
+      background-position: -1272px -83px
+    &-24
+      background-position: -1400px -83px
+
+
+@media (min-width: 1024px)
+  .footer
+    &-social 
+      &__link:hover
+        background-image: url(../img/social-sprite-hover.png)
+    &-nav 
+      &__item:hover
+        color: #ffe905
+
+@media (max-width: 1600px)
+  .footer
+    &-row-2
+      justify-content: flex-start
+@media (max-width: 1400px)
+  .footer
+    &-row-1 
+      flex-wrap: wrap
+    &-box-1 
+      width: 100%
+      margin-bottom: 40px
+      border: none
+    &-box-2 
+      width: 60%
+      padding-left: 0
+    &-box-3 
+      width: 40%
+@media (max-width: 786px)
+  .footer
+    &-row-1 
+      // flex-direction: column
+    &-box-1 
+    &-box-2 
+      width: 85%
+      padding-left: 0
+      padding-right: 0
+      border: none
+      margin-bottom: 40px
+    &-box-3 
+      padding-left: 0
+      width: 65%
+    &-nav 
+      &__item
+        padding-bottom: 10px
+        padding-top: 10px
+@media (max-width: 786px)
+  .footer
+    &-row-2
+      width: 100%
+      justify-content: center
+      margin-left: 0
+      margin-right: 0
+    &-row-1 
+      width: 100%
+    &-box-2 
+      width: 100%
+    &-box-3 
+      width: 100%
+@media (max-width: 460px)
+  .footer
+    &-nav
+      &__item
+        width: 100%

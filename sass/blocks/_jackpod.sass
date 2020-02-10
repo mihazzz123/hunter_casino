@@ -1,0 +1,169 @@
+.jackpod
+  min-height: 497px
+  position: relative
+  // background-image: url(../img/jackpod-bg.png)
+  // background-size: cover
+  // background-repeat: no-repeat
+  // background-position: top center
+  margin-top: -130px
+  padding-bottom: 75px
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  z-index: 4
+  &-bg 
+    // display: none
+    height: 100%
+    // min-width: 100%
+    &-box
+      left: 0
+      top: 0
+      height: 497px
+      width: 100%
+      z-index: -1
+      position: absolute
+      width: 100%
+      overflow: hidden
+  &-box
+    margin-top: 100px
+    width: 494px
+    height: 200px
+    flex-direction: column
+    background-repeat: no-repeat
+    // background-size: contain
+    padding-top: 70px
+    padding-left: 170px
+    &-1
+      background-image: url(../img/jackpod-1.png)
+    &-2
+      background-image: url(../img/jackpod-2.png)
+    &-3
+      background-image: url(../img/jackpod-3.png)
+    &__title 
+      color: #5c2e00
+      font-size: 20px
+      & span 
+        padding-left: 5px
+        color: #ffe905
+    &__sum
+      color: #5c2e00
+      font-size: 44px
+      font-family: "Fira Sans"
+      font-weight: 700
+      & span 
+        color: #ffffff
+        font-family: "Russo One"
+        font-weight: 400
+        font-size: 42px
+        padding-left: 5px
+
+@media (max-width: 1919px)
+  .jackpod
+    margin-top: -140px
+    &-bg-box
+      height: 115%
+@media (max-width: 1600px)
+  .jackpod
+    &-box 
+      // padding-left: 120px
+      // padding-top: 60px
+      &__title
+        font-size: 16px
+      &__sum span 
+        font-size: 38px
+@media (max-width: 1400px)
+  .games-bg-sec-2
+    bottom: 130px
+  .jackpod
+    &-box 
+      // padding-left: 100px
+      // padding-top: 60px
+      &__title
+        font-size: 14px
+      &__sum 
+        font-size: 34px
+        & span 
+          font-size: 36px
+@media (max-width: 1300px)
+  .jackpod
+    &-box 
+      // padding-left: 90px
+      // padding-top: 50px
+      &__title
+        font-size: 14px
+      &__sum 
+        font-size: 32px
+        & span 
+          font-size: 32px
+@media (max-width: 1200px)
+  .jackpod
+    &-box 
+      // padding-left: 100px
+      // padding-top: 60px
+      &__title
+        font-size: 18px
+      &__sum 
+        font-size: 38px
+        & span 
+          font-size: 36px
+@media (max-width: 992px)
+  .jackpod
+    &-box 
+      // padding-left: 90px
+      // padding-top: 50px
+      &__title
+        font-size: 14px
+      &__sum 
+        font-size: 28px
+        & span 
+          font-size: 28px
+@media (max-width: 786px)
+  .jackpod
+    flex-direction: column
+    align-items: center
+    margin-top: -95px
+    padding-bottom: 50px
+    &-bg-box
+      // height: 100%
+      // height: 790px
+    &-box 
+      padding-left: 150px
+      padding-top: 90px
+      width: 440px
+      height: 200px
+      margin-top: 0
+      &-1 
+        margin-top: 50px
+      &__title
+        font-size: 20px
+      &__sum 
+        font-size: 40px
+        & span 
+          font-size: 40px
+@media (max-width: 500px)
+  .jackpod
+    &-box 
+      width: 100%
+      height: auto
+      padding-left: 150px
+@media (max-width: 450px)
+  .jackpod
+    &-bg-box
+      // height: 580px
+    &-box 
+      padding-left: 0
+      margin-top: 10px
+      &-1 
+        margin-top: 50px
+      &__title
+        display: block
+        margin-left: 30%
+        margin-right: 15px
+        font-size: 16px
+      &__sum 
+        display: block
+        margin-left: 30%
+        margin-right: 15px
+        font-size: 32px
+        & span 
+          font-size: 32px

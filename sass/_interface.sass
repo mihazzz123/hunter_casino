@@ -1,0 +1,299 @@
+* 
+  box-sizing: border-box
+  font-family: 'Fira Sans', sans-serif
+  text-transform: uppercase
+  // font-family: 'Russo One', sans-serif
+
+html, body 
+  width: 100%
+
+body 
+  background-color: #261503
+
+input, textarea, button, a 
+  text-decoration: none
+  outline: none
+  border: none
+  &:focus
+    outline: none
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button
+  display: none
+input, textarea, button
+  cursor: pointer
+  resize: none
+input[type='number']::-webkit-outer-spin-button, input[type='number']::-webkit-inner-spin-button, input[type='number']
+  -webkit-appearance: none
+  -moz-appearance: textfield
+  margin: 0
+
+img 
+  -webkit-user-select: none
+  -moz-user-select: none
+
+.container
+  width: 100%
+
+.content
+  width: calc(100% - 300px)
+  padding-top: 30px
+  padding-left: 60px
+  padding-right: 60px
+  margin-left: 300px
+
+
+.color-text 
+  color: #eea066
+
+.flex
+  display: flex
+
+.flex-center
+  display: flex
+  align-items: center
+  justify-content: center
+
+.bold
+  font-weight: 700
+
+.text-center
+  text-align: center
+.text-right
+  text-align: right
+
+.button-main 
+  border-radius: 5px
+  // background-color: #5bf31e
+  background-image: linear-gradient(to top, #edaf19 0%, #f3e11e 100%)
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.26)
+  box-shadow: 0 5px 0 #b0800c
+  color: #422d09
+  font-size: 18px
+  font-weight: 700
+  text-transform: uppercase
+  transition: 0.3s
+.input-main
+  height: 55px
+  box-shadow: inset 0 2px 13px rgba(68, 27, 8, 0.27), inset 0 -2px 0 #de9a49
+  border-radius: 5px
+  background-color: #914712
+  color: #eea066
+  font-size: 17px
+  font-weight: 700
+  text-transform: uppercase
+  cursor: pointer
+  position: relative
+  &::placeholder
+    color: #eea066
+    font-size: 17px
+    font-weight: 700
+    text-transform: uppercase
+
+.color-text-wh
+  color: #ffffff
+.color-text-fs
+  color: #b85c1f
+.color-text-sec
+  color: #9d6b3e
+.color-text-active
+  color: #ffe905
+
+.select-parent
+  position: relative
+.options
+  // display: flex !important
+  position: absolute
+  flex-direction: column
+  z-index: 1
+  border-radius: 0 0 5px 5px
+.option
+  transition: 0.3s
+
+.checkbox
+  justify-content: flex-start
+  width: 100%
+  // margin-top: 10px
+  &-item 
+    background-repeat: no-repeat
+    // background-size: 100% 100%
+    background-position: center center
+    background-image: url(../img/checkbox-bg.png)
+    background-color: #914712
+    border-radius: 5px  
+    width: 25px
+    height: 25px
+    cursor: pointer
+    &__click
+      width: 25px
+      background-repeat: no-repeat
+      // background-size: contain
+      background-position: center center
+      height: 25px
+      &-active
+        background-image: url(../img/check.png)
+  &-text 
+    margin-left: 10px
+    flex-direction: column
+    &__read
+      color: #ffb680
+      font-size: 14px
+      font-weight: 400
+      font-family: "Fira Sans"
+      font-weight: 400
+      text-transform: none
+      display: block
+    &__link
+      font-size: 14px
+      display: block
+      color: #ffffff
+      font-weight: 600
+      text-transform: none
+      text-decoration: underline
+      position: relative
+      &:after
+        color: #ffb680
+        content: "*"
+        position: absolute
+        right: -8px
+        top: 0
+
+.title-main
+  background-image: linear-gradient(to top, #5fe714 0%, #b4f42a 100%)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  color: #b4f42a
+  font-family: "Russo One"
+  font-size: 60px
+  font-weight: 400
+
+
+.noShadow
+  box-shadow: none !important
+  border-radius: 5px 5px 0 0 !important
+
+.arrow
+  &-left, &-right 
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: contain
+    width: 40px
+    height: 40px
+    transition: 0.3s
+    border-radius: 100%
+    cursor: pointer
+    position: absolute
+    z-index: 10
+    top: calc(50% - 30px)
+    display: none
+  &-left 
+    background-image: url(../img/arrow-left.png)
+    left: -20px
+  &-right
+    right: -20px
+    background-image: url(../img/arrow-right.png)
+
+
+.input-box
+  display: block
+  position: relative  
+  padding-left: 0 !important
+  padding-right: 0 !important
+  padding-bottom: 0 !important
+  padding-top: 0 !important
+  width: 100%
+  & .input-main
+    padding-left: 15px
+    width: 100%
+.no-value
+  display: none
+  position: absolute
+  align-items: center
+  padding-left: 15px
+  left: 5px
+  top: 5px
+  width: calc(100% - 12px)
+  height: calc(100% - 12px)
+  color: #ffe905
+  line-height: 45px
+  font-size: 17px
+  font-weight: 700
+  border-radius: 5px
+  border: 1px dashed #ffe905
+  background-color: #914712
+  white-space: nowrap
+  &__text
+    display: block
+    overflow: hidden
+    text-overflow: ellipsis
+    padding-right: 15px
+  &:after
+    position: absolute
+    width: 40px
+    height: 40px
+    bottom: 0px
+    right: -40px
+    z-index: 2
+    content: url(../img/no-value.png)
+
+@media (max-width: 1200px)
+  .desktop
+    display: none !important
+@media (min-width: 1200px)
+  .mobile
+    display: none !important
+@media (max-width: 992px)
+  .desktop-992
+    display: none !important
+@media (min-width: 992px)
+  .mobile-992
+    display: none !important
+
+
+
+@media (min-width: 1024px)
+  .checkbox-text__link:hover
+    color: #ffe905
+  .button-main:hover
+    box-shadow: 0 6px 0 rgba(0, 0, 0, 0.22)
+    background-color: #5bf31e
+    background-image: linear-gradient(to top, #edaf19 0%, #f3e11e 100%)
+    position: relative
+    &:after
+      content: ""
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      box-shadow: 0 0 13px rgba(255, 190, 0, 0.36)
+  .arrow
+    &-left:hover
+      background-image: url(../img/arrow-left-hover.png)
+      box-shadow: 0 0 10px 2px #ffe905
+    &-right:hover 
+      background-image: url(../img/arrow-right-hover.png)
+      box-shadow: 0 0 10px 2px #ffe905
+  .option:hover
+    background: #9f5018
+    color: #ffffff
+  .input-main:hover
+    color: #ffffff
+    & .input-main::placeholder
+      color: #ffffff
+@media (max-width: 1200px)
+  .content
+    width: 100%
+    margin-left: 0
+@media (max-width: 992px)
+  .content
+    padding-left: 25px
+    padding-right: 25px
+@media (max-width: 450px)
+  .arrow
+    &-left, &-right 
+      top: 90%
+    &-left
+      left: 30%
+    &-right 
+      right: 30%
+
+

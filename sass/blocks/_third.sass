@@ -1,0 +1,171 @@
+.third
+  background-image: url(../img/third/third-bg.jpg)
+  background-repeat: no-repeat
+  background-position: left top
+  // background-size: cover
+  margin-top: -60px
+  padding-top: 170px
+  padding-bottom: 130px
+  // z-index: -1
+  &-wrap 
+    z-index: 5
+    justify-content: flex-end
+  &-block
+    flex-direction: column
+    background-image: url(../img/third/form-bg.svg)
+    background-repeat: no-repeat
+    // background-size: 100% 100%
+    background-position: center center
+    padding: 60px 40px 60px 60px
+    text-align: center
+    width: 440px
+    height: 550px
+  &-offer 
+    &__timer
+      background-image: url(../img/third/timer.png)
+      background-repeat: no-repeat
+      // background-size: 100% 100%
+      background-position: center center
+      height: 125px
+      width: 210px
+      margin-left: auto
+      flex-direction: column
+      justify-content: flex-end
+      padding-bottom: 15px
+      margin-bottom: 20px
+      &-small 
+        color: #5c2e00
+        font-size: 17px
+      &-time 
+        color: #e05f09
+        font-family: "Russo One"
+        font-size: 24px
+    &__surprise 
+      background-image: url(../img/third/surprise-bg.png)
+      background-repeat: no-repeat
+      background-size: 100% 100%
+      background-position: center center
+      height: 125px
+      position: relative
+      flex-direction: column
+      margin-bottom: 20px
+    &__small 
+      color: #eea066
+      font-size: 17px
+    &__img
+      position: absolute
+      bottom: calc(100% - 15px)
+      left: 0
+      width: 160px
+    &__button
+      height: 55px
+      width: 245px
+      margin-left: auto
+      margin-right: auto
+      margin-bottom: 20px
+  &-top 
+    flex-direction: column
+    margin-left: 50px
+    &__wrap
+      flex-direction: column
+    &__item
+      background-image: url(../img/third/op-bg.png)
+      background-repeat: no-repeat
+      // background-size: 100% 100%
+      background-position: center center
+      margin-bottom: 5px
+      align-items: center
+      padding: 5px
+      height: 65px
+      width: 100%
+      position: relative
+    &__photo
+      width: 57px
+      height: 57px
+      box-shadow: inset 0 0 10px rgba(116, 59, 15, 0.23)
+      border-radius: 5px 0 0 5px
+      border: 1px solid #ffe5b3
+      background-color: #e7ab51
+    &__info
+      margin-left: 10px
+      flex-direction: column
+      align-items: flex-start
+    &__name
+      color: #5c2e00
+      font-size: 14px
+      font-weight: 700
+      text-transform: none
+    &__sum
+      font-weight: 400
+      font-size: 20px
+      font-family: "Russo One"
+      color: #e05e08
+
+.star
+  background-image: url(../img/third/star.png)
+  background-repeat: no-repeat
+  background-size: 100% 100%
+  background-position: center center
+  width: 40px
+  height: 40px
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.26)
+  color: #422d09
+  font-family: "Russo One"
+  font-style: normal
+  font-size: 13px
+  position: absolute
+  line-height: 40px
+  text-align: center
+  left: -15px
+  top: -15px
+
+
+@media (max-width: 1800px)
+  .third
+    background-position: -135px center
+@media (max-width: 1400px)
+  .third
+    background-image: url(../img/third/third-bg-mobile.jpg)
+@media (max-width: 1300px)
+  .third
+    &-block 
+      & .main-form__title
+        font-size: 26px
+@media (max-width: 1200px)
+  .third
+    &-wrap 
+      justify-content: space-around
+@media (max-width: 786px)
+  .third
+    background-position: left top
+    background-size: cover
+    &-wrap
+      flex-direction: column
+      align-items: center
+    &-top
+      margin-left: 0 
+      margin-top: 20px
+@media (max-width: 546px)
+  .third 
+    &-block 
+      box-shadow: 0 24px 18px rgba(0, 0, 0, 0.21), inset 0 4px 0 #fcc873
+      border-radius: 10px
+      border: 8px solid #803414
+      background-color: #bf6722
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.07) 0%, rgba(255, 255, 255, 0.07) 100%)
+      padding: 25px 20px
+      height: auto
+@media (max-width: 450px)
+  .third 
+    &-block 
+      width: 99%
+    &-offer__img
+      display: none
+    &-offer__timer
+      margin-right: auto
+      width: 100%
+    &-offer__surprise span 
+      margin-left: auto
+      margin-right: auto
+    &-offer__button
+      width: 100%
